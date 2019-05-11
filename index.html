@@ -29,10 +29,16 @@
 
 		.title {
 			display: flex;
-			width: 300px;
+			width: 230px;
 			max-width: 100%;
 			justify-content: space-between;
     	flex-wrap: wrap;
+		}
+
+		@media only screen and (min-width: 600px) {
+			.title {
+				width: 300px;	
+			}
 		}
 
 		.title span {
