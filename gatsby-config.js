@@ -5,10 +5,18 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `contents`,
+        name: "contents",
         path: `${__dirname}/contents`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Zdenek.xyz",
+        start_url: "/",
+        icon: "src/images/favicon.png",
       },
     },
     "gatsby-transformer-remark",
