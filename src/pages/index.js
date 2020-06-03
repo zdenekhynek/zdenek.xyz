@@ -6,9 +6,12 @@ import Layout from "../components/Layout";
 const IndexPage = () => {
   return (
     <Layout>
-      <div>
-        zdenek.xyz
-      </div>  
+      <h1 class="title">
+        <span>zdenek.</span>
+        <span>x</span>
+        <span>y</span>
+        <span>z</span>
+      </h1>
     </Layout>
   );
 };
