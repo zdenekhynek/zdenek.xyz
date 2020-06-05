@@ -14,7 +14,7 @@ const IndexPage = () => {
       </h1>
       <p>Developing data-driven interfaces and digital products.</p>
       <p>info@zdenek.xyz</p>
-      <p><a href="./zdenek-hynek-resume-2020.pdf" title="Zdenek Hynek Resume 2020.pdf">Donwload CV</a></p>
+      <p><a href="./zdenek-hynek-resume-2020.pdf" title="Zdenek Hynek Resume 2020.pdf">Download CV</a></p>
     </Layout>
   );
 };
