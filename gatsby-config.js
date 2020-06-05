@@ -21,5 +21,12 @@ module.exports = {
     },
     "gatsby-transformer-remark",
     "gatsby-plugin-remove-trailing-slashes",
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GA_TRACKING_ID,
+        anonymize: true,
+      },
+    },
   ],
 };

@@ -22,8 +22,10 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .title {
@@ -32,6 +34,10 @@ body {
   max-width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+a {
+  color: inherit;
 }
 
 @media only screen and (min-width: 600px) {
