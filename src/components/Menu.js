@@ -1,16 +1,34 @@
 import React from "react";
 import { Link } from "gatsby";
-
-import "./menu.css";
+import styled from "styled-components";
 
 const Menu = () => {
   return (
-    <nav>
-      <Link to="/">Home </Link>
-      <Link to="/about">About </Link>
-      <Link to="/work/reimagine-the-game">Reimagine the game </Link>
-    </nav>
+    <StyledMenu>
+      <StyledLi>
+        <StyledLink to="/">Work</StyledLink>
+      </StyledLi>
+      <StyledLi>
+        <StyledLink to="/about">About</StyledLink>
+      </StyledLi>
+    </StyledMenu>
   );
 };
+
+const StyledMenu = styled.nav`
+  display: flex;
+  align-items: center;
+`;
+
+const StyledLi = styled.li`
+  list-style-type: none;
+  padding: 0 20px;
+`;
+
+const StyledLink = styled(Link)`
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+`;
 
 export default Menu;
