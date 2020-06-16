@@ -1,0 +1,22 @@
+.logo {
+  margin: 0;
+  padding: 10px 20px;
+  background-color: blue;
+}
+
+.logo__link {
+  display: flex;
+  width: 250px;
+  max-width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo__link span {
+  flex-basis: 50%;
+  margin: 50px 0;
+}
+
+.logo__link span:nth-child(2n) {
+  text-align: right;
+}

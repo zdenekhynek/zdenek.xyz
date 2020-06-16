@@ -4,6 +4,8 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -19,7 +21,12 @@ module.exports = {
         icon: "src/images/favicon.png",
       },
     },
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [],
+      },
+    },
     "gatsby-plugin-remove-trailing-slashes",
     {
       resolve: `gatsby-plugin-google-analytics`,
