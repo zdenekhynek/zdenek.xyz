@@ -3,26 +3,25 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 
-const Template = ({
-  data, // this prop will be injected by the GraphQL query below.
-}) => {
+const Template = ({ data }) => {
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html, id } = markdownRemark;
 
   return (
     <Layout>
-      <div className="blog-post-container">
-        <div className="blog-post">
-          {frontmatter.showTitle && <h1 align="center">{frontmatter.title}</h1>}
+      <div className="project-container">
+        <div className="project">
+          {frontmatter.stack && (<p>{frontmatter.stack}</p>)}
+          {frontmatter.role && (<p>{frontmatter.role}</p>)}
           <div
-            className="blog-post-content"
+            className="project-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>
       </div>
     </Layout>
   );
-}
+};
 
 export const pageQuery = graphql`
   query($path: String!) {
@@ -33,11 +32,8 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        title
-        sidebar
-        showTitle
-        hideAnchor
+        stack
+        role
       }
     }
   }
