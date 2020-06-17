@@ -23,7 +23,8 @@ const StyledHeader = styled.div`
   position: relative;
 
   /* compensate for pushed down resume */
-  margin-bottom: 175px;
+  margin-bottom: 130px;
+  
   background-color: rgb(77, 117, 250);
   background: linear-gradient(
     315deg,

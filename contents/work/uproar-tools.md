@@ -1,8 +1,13 @@
 ---
 title: Uproar tools
-summary: Data-driven story of the world’s most popular game.
-thumbnail: ./image.jpg
-order: 3
+summary: Human-rights advocacy digital tool.
+thumbnail: ./uproar-tools.png
+link: https://medium.com/thinking-out-loud/prototyping-for-digital-rights-lobbying-9e011dccff24
+linkTitle: Prototyping for digital rightss lobbying
+linkText: A medium post I wrote about the prototyping process, goals and development of the Uproar Tools project.
+linkImage: ./medium-link.png
+url: http://tools.uproar.fyi/
+order: 2
 stack: Javascript, Webgl, React, D3.js, React Static, Tensorflow.js, Node.js, Ffmpeg
 role: One of the lead developers. Developing overall architecture, data-processing pipelines and bespoke visualisations.
 ---

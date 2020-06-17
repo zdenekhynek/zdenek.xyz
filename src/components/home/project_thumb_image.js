@@ -7,8 +7,33 @@ const ProjectThumbImage = ({ thumbnail, title }) => {
 };
 
 const StyledProjectThumbImage = styled.img`
-  width: 50%;
+  position: relative;
+  width: 100%;
   height: auto;
+
+  &:before,
+  &:after {
+    display: block;
+    content: 'a';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-color: transparent;
+    border-style: solid;
+  }
+
+  &:before {
+      border-width: 1.5em;
+      border-right-color: #ccc;
+      border-top-color: #ccc;
+  }
+
+  &:after {
+      border-radius: 0.4em;
+      border-width: 1.35em;
+      border-right-color: #0c0;
+      border-top-color: #0c0;
+  }
 `;
 
 ProjectThumbImage.propTypes = {

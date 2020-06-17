@@ -6,6 +6,7 @@ const Resume = () => {
     <StyledResume
       href="./zdenek-hynek-resume-2020.pdf"
       title="Zdenek Hynek Resume 2020.pdf"
+      target="_blank"
       className="noise"
     >
       See my<br />resume

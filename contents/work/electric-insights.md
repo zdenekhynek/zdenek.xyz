@@ -1,14 +1,14 @@
 ---
-title: Outraged.me
-summary: An exhibition installation with AI playing the main character.
-thumbnail: ./outraged-me.jpg
-url: http://outraged.me/
-order: 3
+title: Electric Insights
+summary: Dashboard presenting real-time breakdown of the UK electricity production.
+thumbnail: ./electric-insights.jpg
+url: https://electricinsights.co.uk/
+order: 4
 stack: Javascript, Webgl, React, D3.js, React Static, Tensorflow.js, Node.js, Ffmpeg
 role: One of the lead developers. Developing overall architecture, data-processing pipelines and bespoke visualisations.
 ---
 
-# Outraged.me
+# Uproar Tools
 
 Data-driven story of the world’s most popular game. Visualisation-heavy website which analyses audio recordings from the Bayern Munich Allianz arena. Can we quantify the support of the fans and its impact on the match? Well, let’s find out.
 

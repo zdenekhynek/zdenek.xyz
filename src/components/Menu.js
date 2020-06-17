@@ -24,6 +24,9 @@ const Menu = () => {
 const StyledMenu = styled.nav`
   display: flex;
   align-items: center;
+
+  /* TEMP hidden */
+  display: none;
 `;
 
 const StyledLi = styled.li`

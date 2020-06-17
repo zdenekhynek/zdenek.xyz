@@ -14,12 +14,12 @@ const IndexPage = ({ data }) => {
       <HomeHeader content={html} />
       <div className="container">
         {allMarkdownRemark.edges.map(({ node }, i) => {
-          const { frontmatter } = node;
+          const { frontmatter, fields: { slug } } = node;
           const isOdd = i % 2 === 0;
 
           return (
             <StyledProjectItem key={i}>
-              <ProjectThumb isOdd={isOdd} {...frontmatter} />
+              <ProjectThumb isOdd={isOdd} slug={slug} {...frontmatter} />
             </StyledProjectItem>
           );
         })}
@@ -55,6 +55,11 @@ export const query = graphql`
             title
             summary
             thumbnail
+            url
+            link
+            linkTitle
+            linkText
+            linkImage
           }
         }
       }
