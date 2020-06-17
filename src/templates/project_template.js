@@ -1,16 +1,18 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 
 const Template = ({ data }) => {
   const { markdownRemark } = data; // data.markdownRemark holds our post data
-  const { html } = markdownRemark;
+  const { frontmatter, html, id } = markdownRemark;
 
   return (
     <Layout>
       <div className="project-container">
         <div className="project">
+          {frontmatter.stack && (<p>{frontmatter.stack}</p>)}
+          {frontmatter.role && (<p>{frontmatter.role}</p>)}
           <div
             className="project-content"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -29,6 +31,10 @@ export const pageQuery = graphql`
       }
       id
       html
+      frontmatter {
+        stack
+        role
+      }
     }
   }
 `;

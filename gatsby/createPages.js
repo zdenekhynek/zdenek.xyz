@@ -5,9 +5,8 @@ module.exports = exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
   //  compile paths to all the templates
-  const homeTemplate = path.resolve(`src/templates/projectTemplate.js`);
-  const projectTemplate = path.resolve(`src/templates/projectTemplate.js`);
-  const aboutTemplate = path.resolve(`src/templates/projectTemplate.js`);
+  const projectTemplate = path.resolve(`src/templates/project_template.js`);
+  const aboutTemplate = path.resolve(`src/templates/about_template.js`);
 
   return graphql(`
     {
