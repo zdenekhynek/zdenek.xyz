@@ -2,22 +2,34 @@ import React from "react";
 import { Link } from "gatsby";
 
 import Layout from "../components/Layout";
+import Project from "../components/home/Project";
 
 const IndexPage = ({ data }) => {
-  const { markdownRemark } = data; // data.markdownRemark holds our post data
+  const { markdownRemark, allMarkdownRemark } = data; // data.markdownRemark holds our post data
   const { html } = markdownRemark;
 
   return (
     <Layout>
-      <h1 class="title">
+      <h1>
         <span>zdenek.</span>
         <span>x</span>
         <span>y</span>
         <span>z</span>
       </h1>
+      {allMarkdownRemark.edges.map(({ node }, i) => {
+        const { frontmatter } = node;
+        return <li key={i}><Project {...frontmatter} /></li>;
+      })}
       <p>Developing data-driven interfaces and digital products.</p>
       <p>info@zdenek.xyz</p>
-      <p><a href="./zdenek-hynek-resume-2020.pdf" title="Zdenek Hynek Resume 2020.pdf">Download CV</a></p>
+      <p>
+        <a
+          href="./zdenek-hynek-resume-2020.pdf"
+          title="Zdenek Hynek Resume 2020.pdf"
+        >
+          Download CV
+        </a>
+      </p>
       <div
         className="project-content"
         dangerouslySetInnerHTML={{ __html: html }}
@@ -34,6 +46,24 @@ export const query = graphql`
       }
       id
       html
+    }
+    allMarkdownRemark(
+      sort: { order: ASC, fields: [frontmatter___order] }
+      filter: { fileAbsolutePath: { regex: "/(work)/" } }
+      limit: 1000
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            summary
+            thumbnail
+          }
+        }
+      }
     }
   }
 `;

@@ -2,14 +2,20 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
+const activeClassName = "active";
+
 const Menu = () => {
   return (
     <StyledMenu>
       <StyledLi>
-        <StyledLink to="/">Work</StyledLink>
+        <StyledLink activeClassName={activeClassName} to="/">
+          Work
+        </StyledLink>
       </StyledLi>
       <StyledLi>
-        <StyledLink to="/about">About</StyledLink>
+        <StyledLink activeClassName={activeClassName} to="/about">
+          About
+        </StyledLink>
       </StyledLi>
     </StyledMenu>
   );
@@ -25,10 +31,18 @@ const StyledLi = styled.li`
   padding: 0 20px;
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(Link).attrs({
+  activeClassName: activeClassName,
+})`
   color: inherit;
   text-transform: uppercase;
   text-decoration: none;
+  transition: 0.2s color;
+
+  &:hover,
+  &.${activeClassName} {
+    color: #e68383;
+  }
 `;
 
 export default Menu;

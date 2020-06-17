@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Logo = () => {
   return (
-    <StyledLogo>
+    <StyledLogo className="noise">
       <StyledLink to="/">
         <span>zdenek.</span>
         <span>x</span>
@@ -21,7 +21,7 @@ const StyledLogo = styled.h1`
   font-size: 30px;
   font-weight: 100;
   background-color: #4d75fa;
-
+  
   @media only screen and (min-width: 768px) {
     padding: 20px 25px;
   }

@@ -9,8 +9,8 @@ import "./global.css";
 
 const Layout = ({ children }) => {
   return (
-    <div class="container">
-      <StyledHeader class="header">
+    <div>
+      <StyledHeader>
         <Logo />
         <Menu />
       </StyledHeader>
