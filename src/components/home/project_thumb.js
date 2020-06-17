@@ -117,8 +117,12 @@ const StyledProjectBody = styled.div`
   }
 
   h4 {
-    padding: 40px 20px;
+    padding: 20px;
     font-size: 24px;
+
+    @media only screen and (min-width: 768px) {
+      padding: 40px 20px;
+    }
   }
 `;
 

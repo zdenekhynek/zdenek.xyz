@@ -23,7 +23,7 @@ const StyledHeader = styled.div`
   position: relative;
 
   /* compensate for pushed down resume */
-  margin-bottom: 130px;
+  margin-bottom: 180px;
   
   background-color: rgb(77, 117, 250);
   background: linear-gradient(
@@ -36,6 +36,9 @@ const StyledHeader = styled.div`
     /* pull under the header */
     margin-top: -114px;
     padding-top: 114px;
+
+    /* compensate for pushed down resume */
+    margin-bottom: 130px;
   }
 `;
 

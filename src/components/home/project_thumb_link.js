@@ -18,12 +18,14 @@ const ProjectThumbLink = ({ link = "", title = "", image = "", text = "" }) => {
 const StyledProjectLink = styled.a`
   display: flex;
   flex-direction: column;
+  padding: 20px;
   color: inherit;
   text-decoration: none;
 
   @media only screen and (min-width: 768px) {
     flex-direction: row-reverse;
     width: 100%;
+    padding: 0;
 
     > div {
       flex-grow: 1;
@@ -56,8 +58,12 @@ const StyledProjectLink = styled.a`
   }
 
   img {
-    width: 250px;
+    width: 100%;
     height: auto;
+
+    @media only screen and (min-width: 768px) {
+      width: 250px;
+    }
   }
 `;
 

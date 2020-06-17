@@ -57,8 +57,10 @@ const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
 
   @media only screen and (min-width: 768px) {
+    text-align: left;
     flex-direction: row;
   }
 
@@ -69,8 +71,13 @@ const StyledContainer = styled.div`
     }
 
     &:last-child {
+      padding: 0 20px; /* give social icons some space */
       color: #e68383;
       fill: #e68383;
+
+      @media only screen and (min-width: 768px) {
+        padding: 0;
+      }
     }
   }
 `;

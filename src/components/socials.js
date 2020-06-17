@@ -66,9 +66,9 @@ const Socials = () => {
 
 const StyledSocials = styled.ul`
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   list-style-type: none;
+  padding: 0;
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
