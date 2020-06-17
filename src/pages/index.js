@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import styled from "styled-components";
 
 import Layout from "../components/layout";
 import ProjectThumb from "../components/home/project_thumb";
@@ -11,22 +11,26 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <HomeHeader content={html}/>
+      <HomeHeader content={html} />
       <div className="container">
         {allMarkdownRemark.edges.map(({ node }, i) => {
           const { frontmatter } = node;
           const isOdd = i % 2 === 0;
 
           return (
-            <li key={i}>
+            <StyledProjectItem key={i}>
               <ProjectThumb isOdd={isOdd} {...frontmatter} />
-            </li>
+            </StyledProjectItem>
           );
         })}
       </div>
     </Layout>
   );
 };
+
+const StyledProjectItem = styled.li`
+  list-style-type: none;
+`;
 
 export const query = graphql`
   query {
