@@ -4,11 +4,11 @@ import styled from "styled-components";
 
 const Project = ({ title = "", summary = "", thumbnail = "" }) => {
   return (
-    <div key={title}>
+    <StyledProject>
       <h2>{title}</h2>
       <p>{summary}</p>
       {thumbnail && <img src={thumbnail} alt={title} />}
-    </div>
+    </StyledProject>
   );
 };
 
