@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const Project = ({
+const ProjectThumb = ({
   title = "",
   summary = "",
   thumbnail = "",
@@ -31,11 +31,11 @@ const StyledProject = styled.div`
   }
 `;
 
-Project.propTypes = {
+ProjectThumb.propTypes = {
   title: PropTypes.string,
   summary: PropTypes.string,
   thumbnail: PropTypes.string,
   isOdd: PropTypes.bool,
 };
 
-export default Project;
+export default ProjectThumb;

@@ -1,3 +1,1 @@
-# Home
-
-Home page
+## Developing data-driven interfaces and digital products.

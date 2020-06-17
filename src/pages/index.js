@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "gatsby";
 
 import Layout from "../components/Layout";
-import Project from "../components/home/Project";
+import ProjectThumb from "../components/home/project_thumb";
+import HomeHeader from "../components/home/home_header";
 
 const IndexPage = ({ data }) => {
   const { markdownRemark, allMarkdownRemark } = data; // data.markdownRemark holds our post data
@@ -10,12 +11,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <h1>
-        <span>zdenek.</span>
-        <span>x</span>
-        <span>y</span>
-        <span>z</span>
-      </h1>
+      <HomeHeader content={html}/>
       <div className="container">
         {allMarkdownRemark.edges.map(({ node }, i) => {
           const { frontmatter } = node;
@@ -23,7 +19,7 @@ const IndexPage = ({ data }) => {
 
           return (
             <li key={i}>
-              <Project isOdd={isOdd} {...frontmatter} />
+              <ProjectThumb isOdd={isOdd} {...frontmatter} />
             </li>
           );
         })}
