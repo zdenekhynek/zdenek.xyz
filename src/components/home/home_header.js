@@ -22,9 +22,13 @@ const HomeHeader = ({ content = "" }) => {
 const StyledHeader = styled.div`
   position: relative;
 
+  /* pull under the header */
+  margin-top: -114px;
+  padding-top: 114px;
+
   /* compensate for pushed down resume */
   margin-bottom: 180px;
-  
+
   background-color: rgb(77, 117, 250);
   background: linear-gradient(
     315deg,
@@ -33,10 +37,6 @@ const StyledHeader = styled.div`
   );
 
   @media only screen and (min-width: 768px) {
-    /* pull under the header */
-    margin-top: -114px;
-    padding-top: 114px;
-
     /* compensate for pushed down resume */
     margin-bottom: 130px;
   }
@@ -82,7 +82,7 @@ const StyledBorder = styled.div`
   @media only screen and (min-width: 768px) {
     width: 50%;
   }
-`
+`;
 
 const StyledResume = styled.div`
   position: relative;
