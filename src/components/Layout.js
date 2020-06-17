@@ -10,7 +10,7 @@ import "./global.css";
 const Layout = ({ children }) => {
   return (
     <div>
-      <StyledHeader>
+      <StyledHeader className="container">
         <Logo />
         <Menu />
       </StyledHeader>

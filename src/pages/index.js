@@ -16,10 +16,19 @@ const IndexPage = ({ data }) => {
         <span>y</span>
         <span>z</span>
       </h1>
-      {allMarkdownRemark.edges.map(({ node }, i) => {
-        const { frontmatter } = node;
-        return <li key={i}><Project {...frontmatter} /></li>;
-      })}
+      <div className="container">
+        {allMarkdownRemark.edges.map(({ node }, i) => {
+          const { frontmatter } = node;
+          const isOdd = i % 2 === 0;
+
+          return (
+            <li key={i}>
+              <Project isOdd={isOdd} {...frontmatter} />
+            </li>
+          );
+        })}
+      </div>
+
       <p>Developing data-driven interfaces and digital products.</p>
       <p>info@zdenek.xyz</p>
       <p>

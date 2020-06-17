@@ -1,6 +1,7 @@
 ---
 title: Uproar tools
 summary: Data-driven story of the world’s most popular game. Visualisation-heavy website which analyses audio recordings from the Bayern Munich Allianz arena. Can we quantify the support of the fans and its impact on the match? Well, let’s find out.
+thumbnail: ./image.jpg
 order: 1
 stack: Javascript, Webgl, React, D3.js, React Static, Tensorflow.js, Node.js, Ffmpeg
 role: One of the lead developers. Developing overall architecture, data-processing pipelines and bespoke visualisations.

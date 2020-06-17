@@ -18,6 +18,12 @@ body {
   background-image: url("../images/noise.png");
 }
 
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif; */
 
