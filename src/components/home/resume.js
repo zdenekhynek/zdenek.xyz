@@ -17,7 +17,7 @@ const StyledResume = styled.a`
   display: block;
   width: 150px;
   min-height: 175px;
-  padding: 20px;
+  padding: 12px;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   font-size: 22px;
@@ -26,6 +26,7 @@ const StyledResume = styled.a`
   text-transform: uppercase;
   text-decoration: none;
   transition: .2s color, .2s background-color;
+  border: 8px solid #ffec00;
 
   &:hover {
     color: #ffec00;

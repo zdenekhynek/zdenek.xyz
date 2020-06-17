@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 import ProjectThumb from "../components/home/project_thumb";
 import HomeHeader from "../components/home/home_header";
 
@@ -24,21 +24,6 @@ const IndexPage = ({ data }) => {
           );
         })}
       </div>
-
-      <p>Developing data-driven interfaces and digital products.</p>
-      <p>info@zdenek.xyz</p>
-      <p>
-        <a
-          href="./zdenek-hynek-resume-2020.pdf"
-          title="Zdenek Hynek Resume 2020.pdf"
-        >
-          Download CV
-        </a>
-      </p>
-      <div
-        className="project-content"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
     </Layout>
   );
 };

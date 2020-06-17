@@ -74,6 +74,10 @@ const StyledBorder = styled.div`
   width: 100%;
   height: 14px;
   background-color: #4d75fa;
+
+  @media only screen and (min-width: 768px) {
+    width: 50%;
+  }
 `
 
 const StyledResume = styled.div`
