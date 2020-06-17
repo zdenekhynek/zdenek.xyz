@@ -3,7 +3,7 @@ title: Uproar tools
 summary: A digital tool to help civil society raise the profile of digital rights as human rights at the United Nations.
 thumbnail: ./uproar-tools.png
 link: https://medium.com/thinking-out-loud/prototyping-for-digital-rights-lobbying-9e011dccff24
-linkTitle: Prototyping for digital rightss lobbying
+linkTitle: Prototyping for digital rights lobbying
 linkText: A medium post I wrote about the prototyping process, goals and development of the Uproar Tools project.
 linkImage: ./medium-link.png
 url: http://tools.uproar.fyi/
