@@ -23,9 +23,9 @@ const StyledHeader = styled.div`
   position: relative;
 
   /* pull under the header */
-  margin-top: -114px;
-  padding-top: 114px;
-
+  margin-top: -154px;
+  padding-top: 154px;
+  
   /* compensate for pushed down resume */
   margin-bottom: 180px;
 
@@ -37,6 +37,9 @@ const StyledHeader = styled.div`
   );
 
   @media only screen and (min-width: 768px) {
+    margin-top: -114px;
+    padding-top: 114px;
+
     /* compensate for pushed down resume */
     margin-bottom: 130px;
   }

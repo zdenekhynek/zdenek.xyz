@@ -13,7 +13,7 @@ const Menu = () => {
         </StyledLink>
       </StyledLi>
       <StyledLi>
-        <StyledLink activeClassName={activeClassName} to="/about">
+        <StyledLink activeClassName={activeClassName} to="/about/">
           About
         </StyledLink>
       </StyledLi>
@@ -24,14 +24,14 @@ const Menu = () => {
 const StyledMenu = styled.nav`
   display: flex;
   align-items: center;
-
-  /* TEMP hidden */
-  display: none;
+  justify-content: space-around;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
 `;
 
 const StyledLi = styled.li`
   list-style-type: none;
-  padding: 0 20px;
+  padding: 20px 0 20px 20px;
 `;
 
 const StyledLink = styled(Link).attrs({
