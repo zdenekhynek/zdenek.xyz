@@ -36,7 +36,7 @@ const StyledProjectLink = styled.a`
       }
 
       &:last-child {
-        flex: 0 0 250px;
+        flex: 0 0 200px;
       }
     }
   }
@@ -48,6 +48,7 @@ const StyledProjectLink = styled.a`
   }
 
   h5 {
+    margin-top: 0;
     font-family: "Oswald", sans-serif;
     font-size: 22px;
   }
@@ -62,7 +63,7 @@ const StyledProjectLink = styled.a`
     height: auto;
 
     @media only screen and (min-width: 768px) {
-      width: 250px;
+      width: 200px;
     }
   }
 `;

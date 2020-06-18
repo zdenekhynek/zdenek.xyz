@@ -84,7 +84,7 @@ const StyledProjectHeader = styled.div`
     transform: translate(-50%, 0);
 
     @media only screen and (min-width: 768px) {
-      left: ${props => (props.isOdd ? "50%" : "10%")};
+      left: ${props => (props.isOdd ? "55%" : "10%")};
       transform: translate(0, 0); /* reset mobile */
     }
   }
@@ -114,7 +114,12 @@ const StyledProjectBody = styled.div`
     flex-basis: 100%;
 
     @media only screen and (min-width: 768px) {
-      flex-basis: 50%;
+      &:first-child {
+        flex-basis: 45%;
+      }
+      &:last-child {
+        flex-basis: 55%;
+      }
     }
   }
 
