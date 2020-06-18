@@ -4,12 +4,15 @@ import styled from "styled-components";
 
 const Logo = () => {
   return (
-    <StyledLogo className="noise">
+    <StyledLogo>
+      <StyleBackground className="noise" />
       <StyledLink to="/">
-        <span>zdenek.</span>
-        <span>x</span>
-        <span>y</span>
-        <span>z</span>
+        <StyledGraphic>
+          <span>zdenek.</span>
+          <span>x</span>
+          <span>y</span>
+          <span>z</span>
+        </StyledGraphic>
       </StyledLink>
     </StyledLogo>
   );
@@ -20,21 +23,33 @@ const StyledLogo = styled.h1`
   padding: 10px 12px;
   font-size: 30px;
   font-weight: 100;
+`;
+
+const StyleBackground = styled.span`
+  position: absolute;
+  top: 0;
+  left: -1000px;
+  right: -5%;
+  height: 100px;
   background-color: #4d75fa;
-  
+
   @media only screen and (min-width: 768px) {
-    padding: 20px 25px;
+    right: calc(100% - 180px);
   }
 `;
 
 const StyledLink = styled(Link)`
+  position: relative;
+  color: #fcf3de;
+  text-decoration: none;
+`;
+
+const StyledGraphic = styled.span`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 180px;
-  color: #fcf3de;
-  text-decoration: none;
-
+  
   > span {
     flex-basis: 25%;
 
@@ -47,6 +62,6 @@ const StyledLink = styled(Link)`
       font-weight: 400;
     }
   }
-`
+`;
 
 export default Logo;

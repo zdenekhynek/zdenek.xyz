@@ -29,7 +29,10 @@ const ProjectThumb = ({
             <h4>{summary}</h4>
           </div>
           <div>
-            <ProjectThumbImage thumbnail={thumbnail} alt={title} />
+            <ProjectThumbImage
+              thumbnail={thumbnail}
+              isOdd={isOdd}
+            />
           </div>
         </StyledProjectBody>
       </StyledProjectLink>
@@ -42,7 +45,6 @@ const ProjectThumb = ({
         />
       )}
     </StyledProject>
-    
   );
 };
 
@@ -58,7 +60,7 @@ const StyledProjectLink = styled.a`
 
   &:hover {
     img {
-      box-shadow: 5px 5px 20px 1px rgba(77,117,250,1);
+      box-shadow: 5px 5px 20px 1px rgba(77, 117, 250, 1);
     }
   }
 `;
@@ -80,7 +82,7 @@ const StyledProjectHeader = styled.div`
     /* mobile styling */
     left: 50%;
     transform: translate(-50%, 0);
-    
+
     @media only screen and (min-width: 768px) {
       left: ${props => (props.isOdd ? "50%" : "10%")};
       transform: translate(0, 0); /* reset mobile */
@@ -103,7 +105,7 @@ const StyledProjectBody = styled.div`
 
   display: flex;
   flex-direction: column;
-  
+
   @media only screen and (min-width: 768px) {
     flex-direction: ${props => (props.isOdd ? "row-reverse" : "row")};
   }
