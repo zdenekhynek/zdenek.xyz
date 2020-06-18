@@ -1,16 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet"
 
 import Layout from "../components/layout";
 import ProjectThumb from "../components/home/project_thumb";
 import HomeHeader from "../components/home/home_header";
 
 const IndexPage = ({ data }) => {
-  const { markdownRemark, allMarkdownRemark } = data; // data.markdownRemark holds our post data
+  const { markdownRemark, allMarkdownRemark, site } = data;
   const { html } = markdownRemark;
 
   return (
     <Layout>
+      <Helmet>
+        <title>{site.siteMetadata.title}</title>
+      </Helmet>
       <HomeHeader content={html} />
       <div className="container">
         {allMarkdownRemark.edges.map(({ node }, i) => {
@@ -34,6 +38,11 @@ const StyledProjectItem = styled.li`
 
 export const query = graphql`
   query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     markdownRemark(fields: { slug: { eq: "/home" } }) {
       fields {
         slug
