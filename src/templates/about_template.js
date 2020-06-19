@@ -11,9 +11,11 @@ const Clients = ({ items }) => {
       <h3 className="box-title noise">Clients</h3>
       <StyledClientsList>
         {items.map(client => {
-          return <li>
-            <StyledClientImage src={`/clients/${client}.svg`} alt={client} />
-          </li>;
+          return (
+            <li>
+              <StyledClientImage src={`/clients/${client}.svg`} alt={client} />
+            </li>
+          );
         })}
       </StyledClientsList>
     </StyledClients>
@@ -31,10 +33,10 @@ const StyledClientsList = styled.ul`
   margin: 20px 0;
   padding: 0;
   list-style-type: none;
-  
+
   > li {
     flex: 0 0 50%;
-    
+
     padding: 0 20px 10px 0;
 
     @media only screen and (min-width: 768px) {
@@ -46,6 +48,7 @@ const StyledClientsList = styled.ul`
 
 const StyledClientImage = styled.img`
   width: 100%;
+  max-width: 150px;
   height: auto;
   filter: grayscale(100%);
 `;
@@ -61,9 +64,7 @@ const Template = ({ data }) => {
     <Layout>
       <div className="container">
         <StyledAboutBody>
-          <div
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <div dangerouslySetInnerHTML={{ __html: html }} />
           <Socials />
         </StyledAboutBody>
         <Clients items={clients} />
@@ -97,8 +98,16 @@ const StyledAboutBody = styled.div`
       padding: 0;
     }
   }
-`;
 
+  /* override socials hover icon */
+  ul a {
+    &:hover {
+      svg {
+        fill: #e68383;
+      }
+    }
+  }
+`;
 
 export const pageQuery = graphql`
   query($path: String!) {

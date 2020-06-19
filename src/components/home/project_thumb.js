@@ -11,6 +11,8 @@ const ProjectThumb = ({
   thumbnail = "",
   url = "",
   slug = "",
+  stack = "",
+  role = "",
   link = "",
   linkTitle = "",
   linkImage = "",
@@ -27,6 +29,14 @@ const ProjectThumb = ({
         <StyledProjectBody isOdd={isOdd}>
           <div>
             <h4>{summary}</h4>
+            <StyledProjectSection>
+              <h5 className="box-title noise">Stack</h5>
+              <p>{stack}</p>
+            </StyledProjectSection>
+            <StyledProjectSection>
+              <h5 className="box-title noise">Role</h5>
+              <p>{role}</p>
+            </StyledProjectSection>
           </div>
           <div>
             <ProjectThumbImage
@@ -124,13 +134,20 @@ const StyledProjectBody = styled.div`
   }
 
   h4 {
-    padding: 20px;
+    margin-bottom: 0px;
+    padding: 20px 20px 40px;
     font-size: 24px;
-
-    @media only screen and (min-width: 768px) {
-      padding: 40px 20px;
-    }
   }
+
+  h5 {
+    margin: 0;
+  }
+`;
+
+const StyledProjectSection = styled.div`
+  margin-bottom: 30px;
+  padding: 0 20px;
+  /* padding-bottom: 0px; */
 `;
 
 ProjectThumb.propTypes = {
@@ -138,6 +155,8 @@ ProjectThumb.propTypes = {
   summary: PropTypes.string,
   thumbnail: PropTypes.string,
   url: PropTypes.string,
+  stack: PropTypes.string,
+  role: PropTypes.string,
   linkTitle: PropTypes.string,
   linkImage: PropTypes.string,
   linkText: PropTypes.string,

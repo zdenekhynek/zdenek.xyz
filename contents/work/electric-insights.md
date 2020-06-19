@@ -1,11 +1,11 @@
 ---
 title: Electric Insights
-summary: Dashboard presenting real-time breakdown of the UK electricity production.
+summary: Real-time breakdown of the UK electricity production.
 thumbnail: ./electric-insights.jpg
 url: https://electricinsights.co.uk/
 order: 4
-stack: Javascript, Webgl, React, D3.js, React Static, Tensorflow.js, Node.js, Ffmpeg
-role: One of the lead developers. Developing overall architecture, data-processing pipelines and bespoke visualisations.
+stack: React, Redux, D3.js. Mocha. Chai. Express. Node.js. MongoDB
+role: Lead front-developer building up heavily unit-tested dashboard application. 
 ---
 
 # Uproar Tools

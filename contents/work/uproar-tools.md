@@ -1,6 +1,6 @@
 ---
 title: Uproar tools
-summary: A digital tool to help civil society raise the profile of digital rights as human rights at the United Nations.
+summary: A digital tool to help civil society advocate and lobby for digital rights at the United Nations.
 thumbnail: ./uproar-tools.png
 link: https://medium.com/thinking-out-loud/prototyping-for-digital-rights-lobbying-9e011dccff24
 linkTitle: Prototyping for digital rights lobbying
@@ -8,8 +8,8 @@ linkText: A medium post I wrote about the prototyping process, goals and develop
 linkImage: ./medium-link.png
 url: http://tools.uproar.fyi/
 order: 2
-stack: Javascript, Webgl, React, D3.js, React Static, Tensorflow.js, Node.js, Ffmpeg
-role: One of the lead developers. Developing overall architecture, data-processing pipelines and bespoke visualisations.
+stack: Django. Python. Selenium. Postgres, Elastic Beanstalk. React. D3.js, Javascript 
+role: Full-stack developer building up the Django backend, Selenium scrapers and React apps for front-end.
 ---
 
 # Uproar Tools

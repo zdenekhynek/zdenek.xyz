@@ -64,6 +64,8 @@ export const query = graphql`
             title
             summary
             thumbnail
+            stack
+            role
             url
             link
             linkTitle

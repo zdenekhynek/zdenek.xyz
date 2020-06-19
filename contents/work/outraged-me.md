@@ -1,11 +1,11 @@
 ---
-title: Outraged.me
+title: Engaged and outraged
 summary: An exhibition installation with AI playing the main character.
 thumbnail: ./outraged-me.jpg
 url: http://outraged.me/
 order: 3
-stack: Javascript, Webgl, React, D3.js, React Static, Tensorflow.js, Node.js, Ffmpeg
-role: One of the lead developers. Developing overall architecture, data-processing pipelines and bespoke visualisations.
+stack: Django, Python. WebSockets. Redis. React. D3.js. Chrome browser extension
+role: Concept creation and full-stack developer building up the Django backend comunicating with React frontend and custom Chrome extensions via web sockets.
 ---
 
 # Outraged.me

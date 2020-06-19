@@ -60,10 +60,11 @@ const StyledProjectLink = styled.a`
 
   img {
     width: 100%;
+    max-width: 150px;
     height: auto;
 
     @media only screen and (min-width: 768px) {
-      width: 200px;
+      max-width: 200px;
     }
   }
 `;
