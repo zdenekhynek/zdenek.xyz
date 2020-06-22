@@ -5,6 +5,71 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import Socials from "../components/socials";
 
+export const SKILLS = [
+  {
+    name: "Frontend",
+    skills: [
+      "Javascript ES6/7",
+      "Typescript",
+      "React",
+      "Redux",
+      "d3.js",
+      "SVG",
+      "canvas",
+      "WebGL",
+      "Mocha",
+      "Chai",
+      "Webpack",
+    ],
+  },
+  {
+    name: "Backend",
+    skills: [
+      "Python",
+      "Django",
+      "Node.js",
+      "Express",
+      "Mysql",
+      "Postgres",
+      "MongoDB",
+      "AWS",
+      "Heroku",
+    ],
+  },
+  {
+    name: "Data science",
+    skills: ["Tensorflow.js", "ml5.js", "Pandas", "Numpy", "Scipy"],
+  },
+];
+
+const Skills = ({ skills }) => {
+  return (
+    <StyledSkills>
+      <h3 className="box-title noise">Skills</h3>
+      <StyledSkillsSection>
+        {skills.map(group => {
+          return (
+            <div>
+              <h4>{group.name}</h4>
+              <p>{group.skills.join(", ")}</p>
+            </div>
+          );
+        })}
+      </StyledSkillsSection>
+    </StyledSkills>
+  );
+};
+
+const StyledSkills = styled.div`
+  margin: 25px 0 75px;
+`;
+
+const StyledSkillsSection = styled.div`
+  h4 {
+    text-transform: uppercase;
+  }
+`;
+
 const Clients = ({ items }) => {
   return (
     <StyledClients>
@@ -67,6 +132,7 @@ const Template = ({ data }) => {
           <div dangerouslySetInnerHTML={{ __html: html }} />
           <Socials />
         </StyledAboutBody>
+        <Skills skills={SKILLS} />
         <Clients items={clients} />
       </div>
     </Layout>

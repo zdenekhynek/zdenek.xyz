@@ -69,7 +69,8 @@ const StyledProjectLink = styled.a`
   text-decoration: none;
 
   &:hover {
-    img {
+    img,
+    video {
       box-shadow: 5px 5px 20px 1px rgba(77, 117, 250, 1);
     }
   }

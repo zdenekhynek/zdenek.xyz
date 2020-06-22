@@ -1,7 +1,7 @@
 ---
-title: Uproar tools
+title: Uproar Tools
 summary: A digital tool to help civil society advocate and lobby for digital rights at the United Nations.
-thumbnail: ./uproar-tools.png
+thumbnail: ./uproar-tools.mp4
 link: https://medium.com/thinking-out-loud/prototyping-for-digital-rights-lobbying-9e011dccff24
 linkTitle: Prototyping for digital rights lobbying
 linkText: A medium post I wrote about the prototyping process, goals and development of the Uproar Tools project.

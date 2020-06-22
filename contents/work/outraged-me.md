@@ -1,10 +1,10 @@
 ---
-title: Engaged and outraged
+title: Engaged and Outraged
 summary: An exhibition installation with AI playing the main character.
-thumbnail: ./outraged-me.jpg
+thumbnail: ./outraged-me.mp4
 url: http://outraged.me/
 order: 3
-stack: Django, Python. WebSockets. Redis. React. D3.js. Chrome browser extension
+stack: Django, Python. WebSockets. Redis. React. WebGL, D3.js. Chrome browser extension
 role: Concept creation and full-stack developer building up the Django backend comunicating with React frontend and custom Chrome extensions via web sockets.
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: Reimagine the game
+title: Reimagine The Game
 summary: Data-driven story of the world’s most popular game.
-thumbnail: ./reimagine-the-game.png
+thumbnail: ./reimagine-the-game.mp4
 link: https://www.youtube.com/watch?v=6FtrpEGQHzE
 linkTitle: Quick and easy way to add AI to your CV
 linkText: My talk from JSDayIE 2019 in Dublin about using machine learning, digit recognition in Javascript for the Reimagine the game project.
