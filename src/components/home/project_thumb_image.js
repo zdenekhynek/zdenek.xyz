@@ -28,6 +28,7 @@ const StyledProjectThumbImage = styled.div`
   position: relative;
   height: 0;
   padding-top: 67.6%;
+  background-color: black;
 
   img,
   video {
