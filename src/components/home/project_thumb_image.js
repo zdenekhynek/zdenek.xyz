@@ -26,9 +26,13 @@ const ProjectThumbImage = ({ thumbnail = "", title = "", isOdd = false }) => {
 
 const StyledProjectThumbImage = styled.div`
   position: relative;
+  height: 0;
+  padding-top: 67.6%;
 
   img,
   video {
+    position: absolute;
+    top: 0;
     width: 100%;
     height: auto;
   }
@@ -37,6 +41,7 @@ const StyledProjectThumbImage = styled.div`
 const StyledImageWrapper = styled.div`
   position: relative;
   padding-top: 67.5%;
+  height: 0;
 `;
 
 const StyledImage = styled.img`
@@ -53,7 +58,7 @@ const StyledStaticGif = styled(StyledImage)``;
 const StyledCorner = styled.span`
   display: block;
   position: absolute;
-  bottom: 4px;
+  bottom: 0;
   right: ${props => (props.isOdd ? "0" : "auto")};
   border-color: transparent;
   border-style: solid;
