@@ -9,7 +9,7 @@ const ProjectThumbImage = ({ thumbnail = "", title = "", isOdd = false }) => {
   return (
     <StyledProjectThumbImage>
       {isVideo ? (
-        <video src={thumbnail} autoPlay muted loop />
+        <video src={thumbnail} autoPlay muted loop playsinline />
       ): (
         <img src={thumbnail} alt={title} />
       )}
