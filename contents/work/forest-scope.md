@@ -1,6 +1,6 @@
 ---
 title: Forest Scope
-summary: Infographic journey of a wood pallet from Louisiana to Yorkshire
+summary: An infographic journey of a wood pallet from Louisiana to Yorkshire
 thumbnail: ./forest-scope.mp4
 url: https://forestscope.info/
 order: 4

@@ -1,6 +1,6 @@
 ---
 title: Reimagine The Game
-summary: Data-driven story of the world’s most popular game.
+summary: A data-driven story of the world’s most popular game.
 thumbnail: ./reimagine-the-game.mp4
 link: https://www.youtube.com/watch?v=6FtrpEGQHzE
 linkTitle: Quick and easy way to add AI to your CV
