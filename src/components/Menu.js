@@ -13,6 +13,11 @@ const Menu = () => {
         </StyledLink>
       </StyledLi>
       <StyledLi>
+        <StyledLink activeClassName={activeClassName} to="/writing">
+          Writing/speaking
+        </StyledLink>
+      </StyledLi>
+      <StyledLi>
         <StyledLink activeClassName={activeClassName} to="/about/">
           About
         </StyledLink>

@@ -5,43 +5,6 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import Socials from "../components/socials";
 
-export const SKILLS = [
-  {
-    name: "Frontend",
-    skills: [
-      "Javascript ES6/7",
-      "Typescript",
-      "React",
-      "Redux",
-      "d3.js",
-      "SVG",
-      "canvas",
-      "WebGL",
-      "Mocha",
-      "Chai",
-      "Webpack",
-    ],
-  },
-  {
-    name: "Backend",
-    skills: [
-      "Python",
-      "Django",
-      "Node.js",
-      "Express",
-      "Mysql",
-      "Postgres",
-      "MongoDB",
-      "AWS",
-      "Heroku",
-    ],
-  },
-  {
-    name: "Data science",
-    skills: ["Tensorflow.js", "ml5.js", "Pandas", "Numpy", "Scipy"],
-  },
-];
-
 const Skills = ({ skills }) => {
   return (
     <StyledSkills>
@@ -51,7 +14,7 @@ const Skills = ({ skills }) => {
           return (
             <div>
               <h4>{group.name}</h4>
-              <p>{group.skills.join(", ")}</p>
+              <p>{group.items.join(", ")}</p>
             </div>
           );
         })}
@@ -122,7 +85,7 @@ const Template = ({ data }) => {
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const {
     html,
-    frontmatter: { clients },
+    frontmatter: { clients, skills },
   } = markdownRemark;
 
   return (
@@ -132,7 +95,7 @@ const Template = ({ data }) => {
           <div dangerouslySetInnerHTML={{ __html: html }} />
           <Socials />
         </StyledAboutBody>
-        <Skills skills={SKILLS} />
+        <Skills skills={skills} />
         <Clients items={clients} />
       </div>
     </Layout>
@@ -183,6 +146,10 @@ export const pageQuery = graphql`
       }
       frontmatter {
         clients
+        skills {
+          name
+          items
+        }
       }
       id
       html

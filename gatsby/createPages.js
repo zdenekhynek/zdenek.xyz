@@ -6,6 +6,7 @@ module.exports = exports.createPages = ({ actions, graphql }) => {
 
   //  compile paths to all the templates
   const projectTemplate = path.resolve(`src/templates/project_template.js`);
+  const writingTemplate = path.resolve(`src/templates/writing_template.js`);
   const aboutTemplate = path.resolve(`src/templates/about_template.js`);
 
   return graphql(`
@@ -42,6 +43,8 @@ module.exports = exports.createPages = ({ actions, graphql }) => {
       let template = projectTemplate;
       if (slug === "/about") {
         template = aboutTemplate;
+      } else if (slug === "/writing") {
+        template = writingTemplate;
       }
 
       createPage({

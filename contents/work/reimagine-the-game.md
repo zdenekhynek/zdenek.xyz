@@ -2,10 +2,11 @@
 title: Reimagine The Game
 summary: A data-driven story of the world’s most popular game.
 thumbnail: ./reimagine-the-game.mp4
-link: https://www.youtube.com/watch?v=6FtrpEGQHzE
-linkTitle: Quick and easy way to add AI to your CV
-linkText: My talk from JSDayIE 2019 in Dublin about using machine learning, digit recognition in Javascript for the Reimagine the game project.
-linkImage: ./youtube-link.png
+link:
+  link: https://www.youtube.com/watch?v=6FtrpEGQHzE
+  title: Quick and easy way to add AI to your CV
+  text: My talk from JSDayIE 2019 in Dublin about using machine learning, digit recognition in Javascript for the Reimagine the game project.
+  image: ./youtube-link.png
 url: https://reimaginethegame.economist.com/
 order: 1
 stack: Javascript, Webgl, React, D3.js, React Static, Tensorflow.js, Node.js, FFMPEG

@@ -1,4 +1,36 @@
 ---
+skills:
+  - name: Frontend
+    items:
+      - Javascript ES6/7
+      - Typescript
+      - React
+      - Redux
+      - d3.js
+      - SVG
+      - canvas
+      - WebGL
+      - Mocha
+      - Chai
+      - Webpack
+  - name: Backend
+    items:
+      - Python
+      - Django
+      - Node.js
+      - Express
+      - Mysql
+      - Postgres
+      - MongoDB
+      - AWS
+      - Heroku
+  - name: Data science
+    items:
+      - Tensorflow.js
+      - ml5.js
+      - Pandas
+      - Numpy
+      - Scipy
 clients: 
 - economist
 - hsbc

@@ -67,10 +67,12 @@ export const query = graphql`
             stack
             role
             url
-            link
-            linkTitle
-            linkText
-            linkImage
+            link {
+              link
+              title
+              text
+              image
+            }
           }
         }
       }

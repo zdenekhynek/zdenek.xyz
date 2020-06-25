@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const ProjectThumbLink = ({ link = "", title = "", image = "", text = "" }) => {
+const ThumbLink = ({ link = "", title = "", image = "", text = "" }) => {
   return (
     <StyledProjectLink href={link} title={title} target="_blank">
       <div>
@@ -69,4 +69,4 @@ const StyledProjectLink = styled.a`
   }
 `;
 
-export default ProjectThumbLink;
+export default ThumbLink;

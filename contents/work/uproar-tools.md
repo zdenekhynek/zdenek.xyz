@@ -2,10 +2,11 @@
 title: Uproar Tools
 summary: A digital tool to help civil society advocate and lobby for digital rights at the United Nations.
 thumbnail: ./uproar-tools.mp4
-link: https://medium.com/thinking-out-loud/prototyping-for-digital-rights-lobbying-9e011dccff24
-linkTitle: Prototyping for digital rights lobbying
-linkText: A medium post I wrote about the prototyping process, goals and development of the Uproar Tools project.
-linkImage: ./medium-link.png
+link:
+  link: https://medium.com/thinking-out-loud/prototyping-for-digital-rights-lobbying-9e011dccff24
+  title: Prototyping for digital rights lobbying
+  text: A medium post I wrote about the prototyping process, goals and development of the Uproar Tools project.
+  image: ./medium-link.png
 url: http://tools.uproar.fyi/
 order: 2
 stack: Django. Python. Selenium. Postgres, Elastic Beanstalk. React. D3.js, Javascript 

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import ProjectThumbImage from "./project_thumb_image";
-import ProjectLink from "./project_thumb_link";
+import ProjectLink from "../thumb_link";
 
 const ProjectThumb = ({
   title = "",
@@ -13,10 +13,7 @@ const ProjectThumb = ({
   slug = "",
   stack = "",
   role = "",
-  link = "",
-  linkTitle = "",
-  linkImage = "",
-  linkText = "",
+  link = null,
   isOdd = false,
 }) => {
   return (
@@ -39,21 +36,11 @@ const ProjectThumb = ({
             </StyledProjectSection>
           </div>
           <div>
-            <ProjectThumbImage
-              thumbnail={thumbnail}
-              isOdd={isOdd}
-            />
+            <ProjectThumbImage thumbnail={thumbnail} isOdd={isOdd} />
           </div>
         </StyledProjectBody>
       </StyledProjectLink>
-      {link && (
-        <ProjectLink
-          link={link}
-          title={linkTitle}
-          image={linkImage}
-          text={linkText}
-        />
-      )}
+      {link && <ProjectLink {...link}s />}
     </StyledProject>
   );
 };
