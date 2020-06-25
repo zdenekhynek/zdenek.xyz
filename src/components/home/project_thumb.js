@@ -34,6 +34,7 @@ const ProjectThumb = ({
               <h5 className="box-title noise">Role</h5>
               <p>{role}</p>
             </StyledProjectSection>
+            <StyleProjectFakeLink>See the project</StyleProjectFakeLink>
           </div>
           <div>
             <ProjectThumbImage thumbnail={thumbnail} isOdd={isOdd} />
@@ -60,7 +61,17 @@ const StyledProjectLink = styled.a`
     video {
       box-shadow: 5px 5px 20px 1px rgba(77, 117, 250, 1);
     }
+    h6 {
+      text-decoration: underline;
+    }
   }
+`;
+
+const StyleProjectFakeLink = styled.h6`
+  padding: 0 20px;
+  font-size: 16px;
+  color: #4d75fa;
+  font-weight: normal;
 `;
 
 const StyledProjectHeader = styled.div`
