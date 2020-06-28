@@ -16,6 +16,9 @@ speaking:
   link: https://vimeo.com/87926507
   image: ./youtube-link.png
 writing:
+- title: 10 easy steps to make a perfect software estimate
+  link: https://medium.com/@zdenekhynek/10-easy-steps-to-make-a-perfect-software-estimate-8dd4762f4153
+  image: ./medium-link.png
 - title: Prototyping for digital rights lobbying
   link: https://medium.com/thinking-out-loud/prototyping-for-digital-rights-lobbying-9e011dccff24
   image: ./medium-link.png
