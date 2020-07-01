@@ -80,6 +80,7 @@ const StyledProjectHeader = styled.div`
 
   h3 {
     position: relative;
+    z-index: 2;
     top: -7px;
     display: inline-block;
     margin: 0;
@@ -101,6 +102,7 @@ const StyledProjectHeader = styled.div`
 
 const StyledBorder = styled.div`
   position: absolute;
+  z-index: 1;
   top: 0;
   display: block;
   width: 100%;
