@@ -14,6 +14,11 @@ const IndexPage = ({ data }) => {
     <Layout>
       <Helmet>
         <title>{site.siteMetadata.title}</title>
+        <meta name="description" content={site.siteMetadata.description}/>
+        <meta property="og:title" content={site.siteMetadata.title} />
+        <meta name="og:description" content={site.siteMetadata.description}/>
+        <meta property="og:image" content="https://zdenek.xyz/about.jpg" />
+        <meta property="og:url" content="https://zdenek.xyz"></meta>
       </Helmet>
       <HomeHeader content={html} />
       <div className="container">
@@ -41,6 +46,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
     markdownRemark(fields: { slug: { eq: "/home" } }) {

@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "zdenek.xyz",
+    description: "A full-stack developer building data-driven interfaces and digital products.",
+    image: "/about.jpg",
   },
   plugins: [
     "gatsby-plugin-styled-components",
