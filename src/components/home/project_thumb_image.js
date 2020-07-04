@@ -10,10 +10,9 @@ const ProjectThumbImage = ({ thumbnail = "", title = "", isOdd = false }) => {
     <StyledProjectThumbImage>
       {isVideo ? (
         <video src={thumbnail} autoPlay muted loop playsInline />
-      ): (
+      ) : (
         <img src={thumbnail} alt={title} />
       )}
-      
 
       {/* <StyledImageWrapper>
         <StyledStaticImage src={thumbnail} alt={title} />
@@ -38,23 +37,6 @@ const StyledProjectThumbImage = styled.div`
     height: auto;
   }
 `;
-
-const StyledImageWrapper = styled.div`
-  position: relative;
-  padding-top: 67.5%;
-  height: 0;
-`;
-
-const StyledImage = styled.img`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-`;
-
-const StyledStaticImage = styled(StyledImage)``;
-const StyledStaticGif = styled(StyledImage)``;
 
 const StyledCorner = styled.span`
   display: block;

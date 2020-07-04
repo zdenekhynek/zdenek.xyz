@@ -26,17 +26,22 @@ const Menu = () => {
   );
 };
 
-const StyledMenu = styled.nav`
+const StyledMenu = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 0;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
 `;
 
 const StyledLi = styled.li`
   list-style-type: none;
-  padding: 20px 0 20px 20px;
+  padding: 20px 0;
+
+  @media only screen and (min-width: 768px) {
+    padding: 20px 0 20px 20px;
+  }
 `;
 
 const StyledLink = styled(Link).attrs({
@@ -49,7 +54,7 @@ const StyledLink = styled(Link).attrs({
 
   &:hover,
   &.${activeClassName} {
-    color: #e68383;
+    color: #4d75fa;
   }
 `;
 

@@ -5,16 +5,16 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import ThumbLink from "../components/thumb_link";
 
-const renderLink = (link, i) => {
+const renderLink = (link, i, theme) => {
   return (
-    <li key={i}>
-      <ThumbLink {...link} />
-    </li>
+    <StyledListItem key={i} isFeatured={link.isFeatured}>
+      <ThumbLink theme={theme} {...link} />
+    </StyledListItem>
   );
 };
 
 const Template = ({ data }) => {
-  const { markdownRemark } = data; // data.markdownRemark holds our post data
+  const { markdownRemark } = data;
   const {
     frontmatter: { speaking, writing },
   } = markdownRemark;
@@ -23,12 +23,12 @@ const Template = ({ data }) => {
     <Layout>
       <div className="container">
         <StyledSection>
-          <h3 className="box-title noise">Speaking</h3>
-          <StyledList>{speaking.map(renderLink)}</StyledList>
+          <StyledHeader>Speaking</StyledHeader>
+          <StyledList>{speaking.map((link, i) => renderLink(link, i, "red"))}</StyledList>
         </StyledSection>
         <StyledSection>
-          <h3 className="box-title noise">Writing</h3>
-          <StyledList>{writing.map(renderLink)}</StyledList>
+          <StyledHeader>Writing</StyledHeader>
+          <StyledList>{writing.map((link, i) => renderLink(link, i, "blue"))}</StyledList>
         </StyledSection>
       </div>
     </Layout>
@@ -43,14 +43,24 @@ const StyledSection = styled.div`
   }
 `;
 
+const StyledHeader = styled.h3`
+  font-size: 34px;
+  font-weight: 500;
+  color: #4d75fa;
+`;
+
 const StyledList = styled.ul`
   padding: 0;
   list-style-type: none;
 
-  li {
-    margin-bottom: 10px;
+  h5 {
+    margin-bottom: 20px;
   }
+`;
 
+const StyledListItem = styled.li`
+  margin-bottom: 10px;
+  
   a {
     padding: 20px 0;
   }
@@ -64,18 +74,10 @@ const StyledList = styled.ul`
           padding-left: 25px;
         }
         &:last-child {
-          flex: 0 0 125px;
+          flex: ${props => (props.isFeatured ? "0 0 350px": "0 0 125px")};
         }
       }
     }
-
-    img {
-      max-width: 125px;
-    }
-  }
-
-  h5 {
-    margin-bottom: 20px;
   }
 `;
 
@@ -92,11 +94,13 @@ export const pageQuery = graphql`
           text
           link
           image
+          isFeatured
         }
         writing {
           title
           link
           image
+          isFeatured
         }
       }
       id

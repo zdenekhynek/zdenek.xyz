@@ -25,6 +25,10 @@ const Skills = ({ skills }) => {
 
 const StyledSkills = styled.div`
   margin: 25px 0 75px;
+
+  @media only screen and (min-width: 1200px) {
+    margin-top: -80px;
+  }
 `;
 
 const StyledSkillsSection = styled.div`
@@ -92,8 +96,13 @@ const Template = ({ data }) => {
     <Layout>
       <div className="container">
         <StyledAboutBody>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
-          <Socials />
+          <div>
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+            <Socials />
+          </div>
+          <div>
+            <img src="/about.jpg" />
+          </div>
         </StyledAboutBody>
         <Skills skills={skills} />
         <Clients items={clients} />
@@ -108,11 +117,19 @@ const StyledAboutBody = styled.div`
   margin-top: 40px;
   font-size: 24px;
 
+  img {
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+  }
+
   @media only screen and (min-width: 768px) {
     flex-direction: row;
-
-    p {
-      padding-right: 80px;
+    justify-content: space-between;
+    
+    div:first-child {
+      max-width: 30em;
+      padding-right: 60px;
     }
   }
 
@@ -120,19 +137,25 @@ const StyledAboutBody = styled.div`
     color: #e68383;
   }
 
-  ul:last-child {
-    padding: 20px; /* give social icons some space */
-
+  ul {
+    
     @media only screen and (min-width: 768px) {
-      padding: 0;
+      width: 200px;
     }
-  }
 
-  /* override socials hover icon */
-  ul a {
-    &:hover {
-      svg {
-        fill: #e68383;
+    &:last-child {
+      padding: 20px; /* give social icons some space */
+
+      @media only screen and (min-width: 768px) {
+        padding: 0;
+      }
+    }
+
+    a {
+      &:hover {
+        svg {
+          fill: #e68383;
+        }
       }
     }
   }

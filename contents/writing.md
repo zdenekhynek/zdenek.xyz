@@ -5,6 +5,7 @@ speaking:
   text: September 2019 at JSDayIE in Dublin.
   link: https://www.youtube.com/watch?v=6FtrpEGQHzE
   image: /youtube-link.png
+  isFeatured: true
 - title: Machine Learning in Javascript
   meta: February 2019 at Applied AI conference in London.
   text: February 2019 at Applied AI conference in London.
@@ -19,6 +20,7 @@ writing:
 - title: 10 easy steps to make a perfect software estimate
   link: https://medium.com/@zdenekhynek/10-easy-steps-to-make-a-perfect-software-estimate-8dd4762f4153
   image: /medium-link.png
+  isFeatured: true
 - title: Prototyping for digital rights lobbying
   link: https://medium.com/thinking-out-loud/prototyping-for-digital-rights-lobbying-9e011dccff24
   image: /medium-link.png

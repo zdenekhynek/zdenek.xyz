@@ -1,16 +1,33 @@
 import React from "react";
 import styled from "styled-components";
 
-const ThumbLink = ({ link = "", title = "", image = "", text = "" }) => {
+const ThumbLink = ({
+  link = "",
+  title = "",
+  image = "",
+  text = "",
+  theme = "blue",
+  isFeatured = false,
+}) => {
   return (
-    <StyledProjectLink href={link} title={title} target="_blank">
+    <StyledProjectLink
+      href={link}
+      title={title}
+      target="_blank"
+      isFeatured={isFeatured}
+    >
       <div>
         <h5>{title}</h5>
         <p>{text}</p>
       </div>
-      <div>
+      <StyledImageWrapper>
+        <StyledProjectThumbBorder
+          className="noise"
+          theme={theme}
+          isFeatured={isFeatured}
+        />
         <img src={image} alt={title} />
-      </div>
+      </StyledImageWrapper>
     </StyledProjectLink>
   );
 };
@@ -28,9 +45,10 @@ const StyledProjectLink = styled.a`
     padding: 0;
 
     > div {
+      position: relative;
       flex-grow: 1;
       flex-shrink: 1;
-      
+
       &:first-child {
         padding-left: 50px;
       }
@@ -43,7 +61,7 @@ const StyledProjectLink = styled.a`
 
   &:hover {
     img {
-      box-shadow: 5px 5px 20px 1px rgba(77,117,250,1);
+      box-shadow: 5px 5px 20px 1px rgba(77, 117, 250, 1);
     }
   }
 
@@ -60,12 +78,36 @@ const StyledProjectLink = styled.a`
 
   img {
     width: 100%;
-    max-width: 150px;
+    max-width: ${props => (props.isFeatured ? "350px" : "150px")};
     height: auto;
 
     @media only screen and (min-width: 768px) {
-      max-width: 200px;
+      max-width: ${props => (props.isFeatured ? "350px" : "200px")};
     }
+  }
+`;
+
+const StyledImageWrapper = styled.div`
+  position: relative;
+`;
+
+const StyledProjectThumbBorder = styled.div`
+  position: absolute;
+  top: 0;
+  display: block;
+  max-width: ${props => (props.isFeatured ? "350px" : "150px")};
+  width: 100%;
+  height: 10px;
+
+  background-color: ${props =>
+    props.theme === "red" ? "rgb(77, 117, 250)" : "rgb(77, 117, 250)"};
+  background: ${props =>
+    props.theme === "red"
+      ? "linear-gradient( 90deg,rgba(77,117,250,1) 0%,rgba(230,131,131,1) 100% )"
+      : "linear-gradient(315deg,rgba(77, 117, 250, 1) 0%,rgba(236, 243, 224, 1) 100%)"};
+
+  @media only screen and (min-width: 768px) {
+    max-width: ${props => (props.isFeatured ? "350px" : "200px")};
   }
 `;
 

@@ -148,7 +148,6 @@ const StyledProjectBody = styled.div`
 const StyledProjectSection = styled.div`
   margin-bottom: 30px;
   padding: 0 20px;
-  /* padding-bottom: 0px; */
 `;
 
 ProjectThumb.propTypes = {
