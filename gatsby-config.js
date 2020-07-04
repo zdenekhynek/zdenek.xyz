@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "zdenek.xyz",
-    description: "A full-stack developer building data-driven interfaces and digital products.",
+    description: "A full-stack developer building data-driven interfaces and digital products. London, UK.",
     image: "/about.jpg",
   },
   plugins: [
