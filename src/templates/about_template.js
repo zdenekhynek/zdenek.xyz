@@ -101,7 +101,13 @@ const Template = ({ data }) => {
             <Socials />
           </div>
           <div>
-            <img src="/about.jpg" />
+            <a
+              href="http://www.poorlydrawnlines.com/comic/good-day/"
+              title="Every day is a good day when you have a balloon."
+              target="_blank"
+            >
+              <img src="/about.jpg" />
+            </a>
           </div>
         </StyledAboutBody>
         <Skills skills={skills} />
@@ -126,7 +132,7 @@ const StyledAboutBody = styled.div`
   @media only screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    
+
     div:first-child {
       max-width: 30em;
       padding-right: 60px;
@@ -138,7 +144,6 @@ const StyledAboutBody = styled.div`
   }
 
   ul {
-    
     @media only screen and (min-width: 768px) {
       width: 200px;
     }
