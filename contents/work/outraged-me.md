@@ -3,6 +3,11 @@ title: Engaged and Outraged
 summary: An exhibition installation with AI playing the main character.
 thumbnail: ./outraged-me.mp4
 url: http://outraged.me/
+link:
+  link: https://vimeo.com/464601186
+  title: Life with Youtube
+  text: My talk from Datafest Tbilisi 2019 about the Engaged and Outraged project and free will. Sort of.
+  image: ./youtube-link.png
 order: 3
 stack: Django, Python. WebSockets. Redis. React. WebGL, D3.js. Chrome browser extension
 role: Concept creation and full-stack developer building up the Django backend comunicating with React frontend and custom Chrome extensions via web sockets.

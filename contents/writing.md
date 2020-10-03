@@ -1,11 +1,16 @@
 ---
 speaking:
+- title: Engaged and Outraged
+  link: https://vimeo.com/464601186
+  meta: Datafest 2019 in Tbilisi.
+  text: Datafest 2019 in Tbilisi.
+  isFeatured: true
+  image: ./youtube-link.png
 - title: Quick and easy way to add AI to your CV
   meta: September 2019 at JSDayIE in Dublin.
   text: September 2019 at JSDayIE in Dublin.
   link: https://www.youtube.com/watch?v=6FtrpEGQHzE
   image: /youtube-link.png
-  isFeatured: true
 - title: Machine Learning in Javascript
   meta: February 2019 at Applied AI conference in London.
   text: February 2019 at Applied AI conference in London.
