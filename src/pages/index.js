@@ -21,6 +21,7 @@ const IndexPage = ({ data }) => {
         <meta property="og:url" content="https://zdenek.xyz"></meta>
       </Helmet>
       <HomeHeader content={html} />
+      <div>test</div>
       <div className="container">
         {allMarkdownRemark.edges.map(({ node }, i) => {
           const { frontmatter, fields: { slug } } = node;
