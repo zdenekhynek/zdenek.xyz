@@ -1,1 +1,1 @@
-## Developing data-driven interfaces and digital products.
+## I’m Zdenek — a full-stack developer creating data-driven interfaces and systems

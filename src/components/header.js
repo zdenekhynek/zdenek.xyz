@@ -14,12 +14,16 @@ const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 1;
-
   display: flex;
-  flex-direction: column;
+  height: 76px;
+  justify-content: space-between;
 
+  /* hide for now */
+  opacity: 0;
+  
   @media only screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;

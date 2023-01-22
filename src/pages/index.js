@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { Helmet } from "react-helmet"
+import { graphql } from "gatsby";
+import { Helmet } from "react-helmet";
 
 import Layout from "../components/layout";
-import ProjectThumb from "../components/home/project_thumb";
+// import ProjectThumb from "../components/home/project_thumb";
 import HomeHeader from "../components/home/home_header";
 
 const IndexPage = ({ data }) => {
@@ -14,17 +15,26 @@ const IndexPage = ({ data }) => {
     <Layout>
       <Helmet>
         <title>{site.siteMetadata.title}</title>
-        <meta name="description" content={site.siteMetadata.description}/>
+        <meta name="description" content={site.siteMetadata.description} />
         <meta property="og:title" content={site.siteMetadata.title} />
-        <meta name="og:description" content={site.siteMetadata.description}/>
+        <meta name="og:description" content={site.siteMetadata.description} />
         <meta property="og:image" content="https://zdenek.xyz/about.jpg" />
         <meta property="og:url" content="https://zdenek.xyz"></meta>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+          rel="stylesheet"
+        ></link>
       </Helmet>
       <HomeHeader content={html} />
-      <div>test</div>
-      <div className="container">
+      {/* <div className="container">
         {allMarkdownRemark.edges.map(({ node }, i) => {
-          const { frontmatter, fields: { slug } } = node;
+          const {
+            frontmatter,
+            fields: { slug },
+          } = node;
           const isOdd = i % 2 === 0;
 
           return (
@@ -33,7 +43,7 @@ const IndexPage = ({ data }) => {
             </StyledProjectItem>
           );
         })}
-      </div>
+      </div> */}
     </Layout>
   );
 };

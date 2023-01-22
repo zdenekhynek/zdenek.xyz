@@ -5,6 +5,11 @@
  */
 
 // You can delete this file if you're not using it
+const express = require('express');
 
 exports.createPages = require("./gatsby/createPages");
 exports.onCreateNode = require("./gatsby/onCreateNode");
+
+// exports.onCreateDevServer = ({ app }) => {
+//   app.use(express.static("public"));
+// };

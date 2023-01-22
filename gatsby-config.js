@@ -1,7 +1,12 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: "zdenek.xyz",
-    description: "A full-stack developer building data-driven interfaces and digital products. London, UK.",
+    description:
+      "A full-stack developer building data-driven interfaces and digital products. London, UK.",
     image: "/about.jpg",
   },
   plugins: [
@@ -36,20 +41,20 @@ module.exports = {
         ],
       },
     },
-    "gatsby-plugin-remove-trailing-slashes",
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GA_TRACKING_ID,
-        anonymize: true,
-      },
-    },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
           include: /\.inline\.svg$/,
         },
+      },
+    },
+    "gatsby-plugin-remove-trailing-slashes",
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GA_TRACKING_ID,
+        anonymize: true,
       },
     },
   ],
