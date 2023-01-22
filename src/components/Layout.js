@@ -13,10 +13,10 @@ const Layout = ({ children }) => {
     <StyledWrapper>
       <Header />
       {children}
-      <StyledPush /> 
+      <StyledPush />
     </StyledWrapper>
     <StyledPush>
-      <Footer />      
+      <Footer />       
     </StyledPush> 
     </>
   );
@@ -32,11 +32,16 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledPush = styled.div`
-  height: 168px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   
-  @media only screen and (min-width: 768px) {
-    height: 117px;  
-  }
+  // height: 168px;
+  
+  // @media only screen and (min-width: 768px) {
+  //   height: 117px;  
+  // }
 `;
 
 Layout.propTypes = {
