@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="theme-color" content="#000000" />
     <!--
       manifest.json provides metadata used when your web app is added to the
@@ -19,14 +22,80 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>zdenek.xyz</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
+    <noscript> You need to enable JavaScript to run this app. </noscript>
     <canvas></canvas>
+    <div class="main">
+      <h1 class="title">
+        I’m Zdenek — a full-stack developer building data-driven interfaces and
+        systems
+      </h1>
+    </div>
+    <footer class="footer">
+      <div>
+        <ul class="socials">
+          <li>
+            <a
+              class="mail"
+              target="_blank"
+              href="./zdenek-hynek-2022-portfolio.pdf"
+              >Portfolio (PDF)</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="socials">
+          <li>
+            <a class="mail" href="mailto:zdenek.hynek@gmail.com"
+              >zdenek.hynek@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="icon githubIcon"
+              href="https://github.com/zdenekhynek"
+              target="_blank"
+              title="Github"
+            >
+              <span class="srOnly">Github</span>
+              <span class="iconGraphic" />
+            </a>
+          </li>
+          <li>
+            <a
+              class="icon twitterIcon"
+              href="https://twitter.com/zdenekhynek"
+              target="_blank"
+              title="Twitter"
+            >
+              <span class="srOnly">Twitter</span>
+              <span class="iconGraphic" />
+            </a>
+          </li>
+          <li>
+            <a
+              class="icon mediumIcon"
+              href="https://medium.com/@zdenekhynek"
+              target="_blank"
+              title="Twitter"
+            >
+              <span class="srOnly">Medium</span>
+              <span class="iconGraphic" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

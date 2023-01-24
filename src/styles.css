@@ -9,6 +9,7 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: Inter, sans-serif;
 }
 
 body {
@@ -23,21 +24,102 @@ canvas {
   height: 100%;
 }
 
-.htmlContainer {
-  width: 80vw;
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  width: 80vw;
+}
+
+.mail {
+  color: #ffffff;
+  text-decoration: none;
+}
+.mail:hover {
+  text-decoration: underline;
 }
 
 .title {
   max-width: 900px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Inter, sans-serif;
-  font-size: 64px;
+  font-size: 32px;
   line-height: 1.15;
   font-weight: 600;
   letter-spacing: -0.04em;
   color: #fff;
   filter: drop-shadow(1px 0px 10px black);
-  pointer-events: none;
+}
+
+@media (min-width: 800px) {
+  .title {
+    font-size: 64px;
+  }
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+@media (min-width: 800px) {
+  .footer {
+    flex-direction: row;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.socials > li {
+  margin: 0 6px;
+}
+
+.socials .hidden {
+  font-size: 0;
+}
+
+.githubIcon .iconGraphic {
+  display: block;
+  width: 35px;
+  height: 34px;
+  background: url("./images/github.inline.svg");
+}
+
+.twitterIcon .iconGraphic {
+  display: block;
+  width: 36px;
+  height: 29px;
+  background: url("./images/twitter.inline.svg");
+}
+
+.mediumIcon .iconGraphic {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("./images/medium.inline.svg");
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
