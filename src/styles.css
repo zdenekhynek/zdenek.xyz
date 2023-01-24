@@ -30,11 +30,13 @@ canvas {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80vw;
+  pointer-events: none;
 }
 
 .mail {
   color: #ffffff;
   text-decoration: none;
+  filter: drop-shadow(0px 0px 10px rgb(0, 0, 0, .5));
 }
 .mail:hover {
   text-decoration: underline;
@@ -68,7 +70,7 @@ canvas {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 8px 20px;
 }
 
 @media (min-width: 800px) {
@@ -81,6 +83,7 @@ canvas {
   display: flex;
   align-items: center;
   list-style-type: none;
+  margin: 8px 0;
   padding: 0;
 }
 
