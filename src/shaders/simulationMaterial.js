@@ -21,8 +21,6 @@ class SimulationMaterial extends THREE.ShaderMaterial {
 		const positionsTexture = new THREE.DataTexture(getSphere(512 * 512, 128), 512, 512, THREE.RGBAFormat, THREE.FloatType);
 		positionsTexture.needsUpdate = true;
 
-		console.log("positionsTexture", positionsTexture);
-
 		super({
 			vertexShader: `varying vec2 vUv;
       void main() {

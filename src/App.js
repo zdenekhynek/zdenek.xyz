@@ -1,8 +1,27 @@
-import { OrbitControls, Html, CameraShake } from "@react-three/drei";
+import { useRef, useEffect } from "react";
+
+import {
+  PerspectiveCamera,
+  OrbitControls,
+  Html,
+  CameraShake,
+  useCamera,
+} from "@react-three/drei";
+
+import { useThree } from "@react-three/fiber";
 // import { useControls } from "leva";
 import { Particles } from "./Particles";
+import UI from "./ui";
+// import Footer from "./footer";
+
+export function calculateRotationFactor(scrollY) {
+  return 1;
+}
 
 export default function App() {
+  const orbitRef = useRef();
+  const cameraRef = useRef();
+
   // const props = useControls({
   //   focus: { value: 5.1, min: 3, max: 7, step: 0.01 },
   //   speed: { value: 20, min: 0.1, max: 100, step: 0.1 },
@@ -23,9 +42,51 @@ export default function App() {
     return acc;
   }, {});
 
+  // useThree(({camera}) => {
+  //   camera.rotation.set(deg2rad(30), 0, 0);
+  // });
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollY = window.scrollY;
+  //     console.log(
+  //       "handle scroll",
+  //       scrollY,
+  //       "orbitRef.current.object.zoom",
+  //       orbitRef.current.object
+  //     );
+  //     if (orbitRef.current) {
+  //       const rotationFactor = calculateRotationFactor(scrollY);
+  //       orbitRef.current.setPolarAngle(rotationFactor);
+
+  //       cameraRef.current.zoom = scrollY * 1000;
+  //       cameraRef.current.updateProjectionMatrix();
+  //       orbitRef.current.update();
+
+  //       // console.log(
+  //       //   "orbitRef.current.object.zoom",
+  //       //   orbitRef.current.object.zoom
+  //       // );
+  //       // orbitRef.current.object.zoom = scrollY * 1000;
+  //       // orbitRef.current.updateProjectionMatrix();
+
+  //       console.log(orbitRef.current);
+  //       orbitRef.current.update();
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
     <>
+      <PerspectiveCamera ref={cameraRef} />
       <OrbitControls
+        ref={orbitRef}
         makeDefault
         autoRotate
         autoRotateSpeed={0.5}
@@ -33,6 +94,12 @@ export default function App() {
       />
       {/* <CameraShake yawFrequency={1} maxYaw={0.05} pitchFrequency={1} maxPitch={0.05} rollFrequency={0.5} maxRoll={0.5} intensity={0.2} /> */}
       <Particles {...props} />
+      <Html fullscreen /*style={{ "pointer-events": "none" }} */>
+        <>
+          <UI />
+          {/* <Footer /> */}
+        </>
+      </Html>
     </>
   );
 }

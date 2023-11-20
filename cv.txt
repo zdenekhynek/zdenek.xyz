@@ -1,0 +1,88 @@
+SENIOR FULL-STACK DEVELOPER
+
+Zdenek Hynek
+
+A full-stack developer with over 10 years of experience in developing innovative and data-rich websites, platforms and digital products. He works
+at the intersection of data and tech, strives to make complicated things simple and enjoys deleting old code.
+
+Selected work
+
+Syntensor    				         	                   Private alpha
+React, Redux, d3.js, Canvas, Python, Typescript, Node.js, MySQL, ElasticSearch, AWS
+An alpha version of platform for analysing inferences of ML model predicting the effect of a drug candidate on human biology. Built with React and Node REST API
+
+Key challenges
+Collaborating with bioinformaticians, ML research engineers and product designers on scoping and defining prototypes of the platform  
+Visualising biological pathways
+Building complex UI allowing for the analysis of millions of data points
+Designing and building efficient backend ingesting GBs of data
+Learning functional basics of biology, mathematics for graph machine learning and essentials of distributed computing for AI model infrastructure
+
+REIMAGINE THE GAME     	                  reimaginethegame.economist.com
+React, Redux, d3.js, Canvas, WebGL, Tensorflow.js, Node.js
+
+Data-driven microsite telling a story of FC Bayern matches with thousands of data points captured within key moments in the game
+
+Key challenges
+Collaborating with audio engineers on designing a bespoke pipeline for 3d audio processing
+Training a machine learning model for digit recognition in a video
+Design processes and developing tooling which would enable curation and processing of data during and after the game
+Developing a large number of flexible visualisations allowing for quick prototyping
+Ensuring functionality of audio players and WebGL visualisation across all target browsers and devices
+
+UPROAR TOOLS     			                              tools.uproar.fyi
+Django. Python. Selenium. Postgres, React, d3.js, AWS
+
+A digital tool to help civil society advocate and lobby for digital rights at the United Nations. Role Full-stack developer building up the Django backend, Selenium scrapers and React apps for front-end.
+
+Key challenges 
+Designing ranking algorithm for the best recommendations
+Collaborating with product designer and human-rights activists on requirements gathering, prototyping and user-testing
+Scraping, parsing and cleaning data from an obsolete website
+Implementing performant full-text search over 1000s of documents
+
+ELECTRIC INSIGHTS    	          		                    ELECTRICINSIGHTS.CO.UK
+React, Redux, d3.js. Mocha. Chai. Express. Node.js. MongoDB
+
+An interactive visualization of the real-time breakdown of the electricity production in the UK
+
+Key challenges 
+Leading the front-end development of high-performant visualisations
+Collaborating with backend developer and domain experts on scraping strategies and the design of APIs
+Long-term maintenance and hot fixes of MongoDb/Express backend
+
+Implementing performant full-text search over 1000s of documents.
+
+
+Skills
+
+Frontend
+Javascript/Typescript
+React, React Hooks, Redux
+d3.js, SVG, canvas, WebGL
+Electron
+Jest, Mocha, Chai
+NPM, Webpack
+CSS, CSS Modules, CSS-IN-JS
+Storybook
+
+Backend
+Node.js, Express
+Python, Django
+Serverless
+MySQL, Aurora MySQL, Postgres, MongoDB,ElasticSearch, Redshift
+
+DEVOPS
+Docker
+AWS, ECS, ECR, EC2, S3, Aur Secrets Manager, Cognito, CDK,
+Heroku
+
+DATA SCIENCE
+Basics of Tensorflow.js and PyTorch
+Pandas, Numpy and Scipy
+
+TOOLS
+GIT, SHELL
+Figma, Adobe CC, Sketch
+Houdini
+QGis
