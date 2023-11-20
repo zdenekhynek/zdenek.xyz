@@ -10,7 +10,7 @@ const Intro = () => {
       <div class="intro">
         <h1 class="h1">
           I’m Zdenek — a full-stack developer of data-driven systems and
-          iterfaces
+          interfaces
         </h1>
       </div>
       <div className="section__wrapper">
