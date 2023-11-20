@@ -77,6 +77,34 @@ export const selectedWorks = [
   },
 ];
 
+export const experiences = [
+  {
+    date: "2021 - present",
+    title: "Founding product engineer",
+    description: "Syntensor",
+  },
+  {
+    date: "2018 - 2021",
+    title: "Contract senior full-stack developer",
+    description: "Own limited componany",
+  },
+  {
+    date: "2016 - 2018",
+    title: "Lead full-stack developer",
+    description: "The Economist Group/Signal Noise",
+  },
+  {
+    date: "2015",
+    title: "Contract research assistant",
+    description: "The Oxford University",
+  },
+  {
+    date: "2008 - 2015",
+    title: "Found and full-stack developer",
+    description: "Geographics",
+  },
+];
+
 export const speaking = [
   {
     title: "Engaged and Outraged",

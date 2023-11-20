@@ -2,7 +2,7 @@ import React from "react";
 
 import Section from "./section";
 import Contact from "./contact";
-import { selectedWorks, speaking, writing } from "./content";
+import { selectedWorks, experiences, speaking, writing } from "./content";
 
 const Intro = () => {
   return (
@@ -15,6 +15,9 @@ const Intro = () => {
       </div>
       <div className="section__wrapper">
         <Section title="Selected work" items={selectedWorks} />
+      </div>
+      <div className="section__wrapper">
+        <Section title="Experience" items={experiences} />
       </div>
       <div className="section__wrapper">
         <Section title="Speaking" items={speaking} />
