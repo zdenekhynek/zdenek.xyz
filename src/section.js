@@ -14,13 +14,18 @@ export default function Section({ title = "Title", items = [] }) {
                   <span className="section__item__date">{date}</span>
                 </div>
                 <div>
-                  <a
-                    className="section__item__title"
-                    href={link}
-                    target="_blank"
-                  >
-                    {title}
-                  </a>
+                  {link && (
+                    <a
+                      className="section__item__title"
+                      href={link}
+                      target="_blank"
+                    >
+                      {title}
+                    </a>
+                  )}
+                  {!link && (
+                    <span>{title}</span>
+                  )}
                   {tech && Array.isArray(tech) && tech.length > 0 && (
                     <p className="section__item__tech">{tech.join(", ")}</p>
                   )}

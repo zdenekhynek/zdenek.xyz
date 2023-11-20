@@ -12,8 +12,6 @@ window.addEventListener("resize", () =>
     events,
     linear: true,
     camera: { fov: 25, position: [0, 0, 6] },
-    // https://barradeau.com/blog/?p=621
-    // This examples needs WebGL1 (?)
     gl: new THREE.WebGLRenderer({
       canvas: document.querySelector("canvas"),
       antialias: true,
