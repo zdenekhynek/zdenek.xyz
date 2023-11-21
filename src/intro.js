@@ -7,6 +7,7 @@ import { selectedWorks, experiences, speaking, writing } from "./content";
 const Intro = () => {
   return (
     <div class="body">
+      {/* <button class="dark_mode_toggle">d</button> */}
       <div class="intro">
         <h1 class="h1">
           I’m Zdenek — a full-stack developer of data-driven systems and

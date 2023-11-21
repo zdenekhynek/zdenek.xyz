@@ -81,6 +81,10 @@ export function Particles({
       0.1
     );
 
+    //  set uniforms
+    const theme = document.documentElement.getAttribute("data-theme");
+    renderRef.current.uniforms.uTheme.value = theme === "light" ? 0 : 1;
+
     simRef.current.uniforms.uTime.value = state.clock.elapsedTime * speed;
     simRef.current.uniforms.uCurlFreq.value = THREE.MathUtils.lerp(
       simRef.current.uniforms.uCurlFreq.value,

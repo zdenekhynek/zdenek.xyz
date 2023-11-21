@@ -22,6 +22,8 @@ class DofPointsMaterial extends THREE.ShaderMaterial {
       fragmentShader: `uniform float uOpacity;
       varying float vDistance;
       uniform float uTime;
+      uniform float uTheme;
+      
       void main() {
         float t = uTime * 0.015;
         vec2 cxy = 2.0 * gl_PointCoord - 1.0;
@@ -33,18 +35,26 @@ class DofPointsMaterial extends THREE.ShaderMaterial {
         // vec3 baseColorA = vec3(0.63, 0.333, 0.73);
         // vec3 baseColorB = vec3(0.0, 0.0, 0.0);
         // vec3 baseColor = mix(baseColorA, baseColorB, sin(t));
+        
         //vec3 baseColor = vec3(221, 0, 224) / 255.0;
-        vec3 baseColor = vec3(255, 255, 255) / 255.0;
-        //vec3 baseColor = vec3(0.0, 0.0, 0.0) / 255.0;
+        //vec3 baseColor = vec3(255, 255, 255) / 255.0;
+        vec3 baseColor = vec3(0.0, 0.0, 0.0) / 255.0;
+        
         //  #4B07DB, rgb(0,116,225)
 
-        gl_FragColor = vec4(baseColor, (1.04 - clamp(vDistance * 1.5, 0.0, 1.0)));
+        vec3 lightColor = vec3(255.0, 255.0, 255.0) / 255.0;
+        vec3 darkColor = vec3(0.0, 0.0, 0.0) / 255.0;
+
+        vec3 themeColor = mix(darkColor, lightColor, uTheme);
+
+        gl_FragColor = vec4(themeColor, (1.04 - clamp(vDistance * 1.5, 0.0, 1.0)));
       
       }`,
       uniforms: {
         positions: { value: null },
         uTime: { value: 0 },
         uFocus: { value: 5.1 },
+        uTheme: { value: 0.0 },
         uFov: { value: 50 },
         uBlur: { value: 30 },
       },

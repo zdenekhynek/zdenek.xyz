@@ -12,6 +12,8 @@ import { useThree } from "@react-three/fiber";
 // import { useControls } from "leva";
 import { Particles } from "./Particles";
 import UI from "./ui";
+import { injectDarkModeScripts } from "./fns";
+import useExternalScripts from "./hooks/use_external_script";
 // import Footer from "./footer";
 
 export function calculateRotationFactor(scrollY) {
@@ -19,6 +21,8 @@ export function calculateRotationFactor(scrollY) {
 }
 
 export default function App() {
+  useExternalScripts({ scriptString: injectDarkModeScripts });
+
   const orbitRef = useRef();
   const cameraRef = useRef();
 
