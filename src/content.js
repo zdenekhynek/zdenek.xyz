@@ -100,7 +100,7 @@ export const experiences = [
   },
   {
     date: "2008 - 2015",
-    title: "Found and full-stack developer",
+    title: "Founder and full-stack developer",
     description: "Geographics",
   },
 ];
