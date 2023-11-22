@@ -42,9 +42,18 @@ class DofPointsMaterial extends THREE.ShaderMaterial {
         
         //  #4B07DB, rgb(0,116,225)
 
-        vec3 lightColor = vec3(255.0, 255.0, 255.0) / 255.0;
-        vec3 darkColor = vec3(0.0, 0.0, 0.0) / 255.0;
-
+        //vec3 lightColor = vec3(255.0, 255.0, 255.0) / 255.0;
+        vec3 lightColor = vec3(254, 111, 29) / 255.0; // orange
+        
+        // vec3 darkColor = vec3(0.0, 0.0, 0.0) / 255.0;
+        //  vec3 darkColor = vec3(40, 233, 140) / 255.0;
+        
+        //vec3 darkColor = vec3(20, 197, 253) / 255.0; //  aquamarine
+        //vec3 darkColor = vec3(19, 56, 243) / 255.0; // dark blue
+        //vec3 darkColor = vec3(243, 19, 19) / 255.0; // red
+        //vec3 darkColor = vec3(255, 153, 204) / 255.0; //  pink
+        vec3 darkColor = vec3(40, 233, 140) / 255.0; //  green
+        //vec3 darkColor = vec3(254, 111, 29) / 255.0; //  orange
         vec3 themeColor = mix(darkColor, lightColor, uTheme);
 
         gl_FragColor = vec4(themeColor, (1.04 - clamp(vDistance * 1.5, 0.0, 1.0)));
