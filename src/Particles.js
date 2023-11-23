@@ -91,6 +91,8 @@ export function Particles({
       curl,
       0.1
     );
+
+    renderRef.current.uniforms.screenWidth.value = window.innerWidth;
   });
 
   return (
