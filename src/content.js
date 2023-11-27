@@ -19,6 +19,15 @@ export const selectedWorks = [
       "A drug discovery platform for analysing inferences of ML model predicting the effect of a drug candidates on human biology.",
     link: "https://syntensor.com",
   },
+
+  {
+    title: "Uproar Tools",
+    date: "February 2019",
+    tech: ["Django", "Python", "Selenium", "Postgres", "React", "d3.js", "AWS"],
+    description:
+      "A digital tool to help civil society advocate and lobby for digital rights at the United Nations. ",
+    link: "https://tools.uproar.fyi",
+  },
   {
     title: "Reimagine the game",
     date: "August 2018",
@@ -36,16 +45,16 @@ export const selectedWorks = [
       "Award winning data-driven microsite telling a story of FC Bayern matches with thousands of data points captured within key moments in the game.",
   },
   {
-    title: "Uproar Tools",
-    date: "February 2019",
-    tech: ["Django", "Python", "Selenium", "Postgres", "React", "d3.js", "AWS"],
+    title: "Forest Scope",
+    date: "January 2018",
+    tech: ["React", "Redux", "d3.js", "SVG", "WebGL"],
     description:
-      "A digital tool to help civil society advocate and lobby for digital rights at the United Nations. ",
-    link: "https://tools.uproar.fyi",
+      "An infographic journey of a wood pallet from Louisiana to Yorkshire",
+    link: "https://forestscope.info",
   },
   {
     title: "Electric Insights",
-    date: "January 2019",
+    date: "June 2017",
     tech: [
       "React",
       "Redux",
@@ -61,46 +70,45 @@ export const selectedWorks = [
     link: "https://electricinsights.co.uk",
   },
   {
-    title: "Forest Scope",
-    date: "January 2016",
-    tech: ["React", "Redux", "d3.js", "SVG", "WebGL"],
-    description:
-      "An infographic journey of a wood pallet from Louisiana to Yorkshire",
-    link: "https://forestscope.info",
-  },
-  {
     title: "The Our World in Data - Grapher",
     date: "February 2015",
     tech: ["Backbone", "d3.js", "SVG", "PHP", "Mysql"],
     description: "Open-source tool to store tool to store and visualize data.",
     link: "https://ourworldindata.org/owid-grapher",
   },
+  {
+    title: "Czech Crime Map",
+    date: "November 2013",
+    tech: ["d3.js", "SVG", "PHP", "Mysql"],
+    description: "An interactive map of crime in the Czech Republic.",
+    link: "https://czechcrime.org/",
+  },
 ];
 
 export const experiences = [
   {
     date: "2021 - present",
-    title: "Founding product engineer",
+    title: "Founding Product Engineer",
     description: "Syntensor",
   },
   {
     date: "2018 - 2021",
-    title: "Contract senior full-stack developer",
+    title: "Contract Senior Full-Stack Developer",
     description: "Own limited componany",
   },
   {
     date: "2016 - 2018",
-    title: "Lead full-stack developer",
+    title: "Lead Full-Stack Developer",
     description: "The Economist Group/Signal Noise",
   },
   {
     date: "2015",
-    title: "Contract research assistant",
+    title: "Research Assistant",
     description: "The Oxford University",
   },
   {
     date: "2008 - 2015",
-    title: "Founder and full-stack developer",
+    title: "Founder and Full-Stack Developer",
     description: "Geographics",
   },
 ];
