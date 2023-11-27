@@ -115,13 +115,13 @@ export const speaking = [
   {
     title: "Machine learning in Javascript (workshop)",
     date: "December 2020",
-    description: "Datafest 2020 in Tbilisi.",
+    description: "Datafest 2020 in Tbilisi",
     link: "https://www.youtube.com/watch?v=1IfhKXiOhHw",
   },
   {
     title: "Engaged and Outraged",
     date: "November 2019",
-    description: "Datafest 2019 in Tbilisi.",
+    description: "Datafest 2019 in Tbilisi",
     link: "https://vimeo.com/464601186",
     presentationLink: null,
   },
@@ -169,7 +169,7 @@ export const speaking = [
   {
     title: "Drugs, Guns and Sex",
     date: "February 2014",
-    description: "CartoCon in Olomouc.",
+    description: "CartoCon in Olomouc",
     link: "https://vimeo.com/87926507",
     presentationLink: null,
   },
