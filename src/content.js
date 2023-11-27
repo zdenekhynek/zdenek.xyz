@@ -107,6 +107,18 @@ export const experiences = [
 
 export const speaking = [
   {
+    title: "Datapoints are people too",
+    date: "April 2021",
+    description: "Outlier 2021 conference panel discussion",
+    link: "https://www.youtube.com/watch?v=qCSplKHJAWk",
+  },
+  {
+    title: "Machine learning in Javascript (workshop)",
+    date: "December 2020",
+    description: "Datafest 2020 in Tbilisi.",
+    link: "https://www.youtube.com/watch?v=1IfhKXiOhHw",
+  },
+  {
     title: "Engaged and Outraged",
     date: "November 2019",
     description: "Datafest 2019 in Tbilisi.",
