@@ -186,6 +186,11 @@ export const speaking = [
 
 export const writing = [
   {
+    title: "No-nonsense advise on public speaking",
+    date: "January 2024",
+    link: "https://medium.com/@zdenekhynek/no-nonsense-advise-on-public-speaking-9fb8684ed6d3",
+  },
+  {
     title: "10 easy steps to make a perfect software estimate",
     date: "June 2020",
     link: "https://medium.com/@zdenekhynek/10-easy-steps-to-make-a-perfect-software-estimate-8dd4762f4153",
@@ -206,5 +211,28 @@ export const writing = [
       "Five talks from OpenVis 2017 you’d be completely insane not to watch right now",
     date: "June 2017",
     link: "https://medium.com/@zdenekhynek/openvis-2017-review-cc2c5ad89891",
+  },
+];
+
+export const reading = [
+  {
+    title: "A Philosophy of Software Design by John Ousterhout",
+    date: "December 2023",
+    link: "https://galvanized-swordfish-aa0.notion.site/A-Philosophy-of-Software-Design-b0d028f024614408b98b4dccbb67c273?pvs=4",
+  },
+  {
+    title: "Designing Products People Love by Scott Hurff",
+    date: "January 2024",
+    link: "",
+  },
+  {
+    title: "Designing Data-Intensive Applications",
+    date: "2023",
+    link: "",
+  },
+  {
+    title: "The Pragmatic Programmer",
+    date: "2024",
+    link: "",
   },
 ];
