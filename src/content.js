@@ -31,7 +31,7 @@ export const selectedWorks = [
   {
     title: "Reimagine the game",
     date: "August 2018",
-    link: "https://reimaginethegame.economist.com",
+    link: "https://www.informationisbeautifulawards.com/showcase/3442-reimagine-the-game",
     tech: [
       "React",
       "Redux",
