@@ -19,7 +19,15 @@ export const selectedWorks = [
       "A drug discovery platform for analysing inferences of ML model predicting the effect of a drug candidates on human biology.",
     link: "https://syntensor.com",
   },
+  {
+    title: "Torchdyn",
+    date: "August 2022",
+    tech: ["Next.js", "React", "WebGL"],
+    description:
+      "A microsite for a deep learning Python library and scientific computing.",
 
+    link: "https://torchdyn.org",
+  },
   {
     title: "Uproar Tools",
     date: "February 2019",
@@ -43,14 +51,6 @@ export const selectedWorks = [
     ],
     description:
       "Award winning data-driven microsite telling a story of FC Bayern matches with thousands of data points captured within key moments in the game.",
-  },
-  {
-    title: "Forest Scope",
-    date: "January 2018",
-    tech: ["React", "Redux", "d3.js", "SVG", "WebGL"],
-    description:
-      "An infographic journey of a wood pallet from Louisiana to Yorkshire",
-    link: "https://forestscope.info",
   },
   {
     title: "Electric Insights",
@@ -94,7 +94,7 @@ export const experiences = [
   {
     date: "2018 - 2021",
     title: "Contract Senior Full-Stack Developer",
-    description: "Own limited componany",
+    description: "Own limited company",
   },
   {
     date: "2016 - 2018",
@@ -223,7 +223,7 @@ export const reading = [
   {
     title: "Designing Products People Love by Scott Hurff",
     date: "January 2024",
-    link: "",
+    link: "https://galvanized-swordfish-aa0.notion.site/Designing-products-that-people-want-cfdb3879c6894b8e96219165ed034bfa?pvs=4",
   },
   {
     title: "Designing Data-Intensive Applications",
