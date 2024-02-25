@@ -34,8 +34,8 @@ class DofPointsMaterial extends THREE.ShaderMaterial {
         float t = uTime * 0.015;
         vec2 cxy = 2.0 * gl_PointCoord - 1.0;
         if (dot(cxy, cxy) > 1.0) discard;
-        //gl_FragColor = vec4(vec3(1.0), (1.04 - clamp(vDistance * 1.5, 0.0, 1.0)));
         
+        //gl_FragColor = vec4(vec3(1.0), (1.04 - clamp(vDistance * 1.5, 0.0, 1.0)));
         //gl_FragColor = vec4(vec3(1.00), (1.04 - clamp(vDistance * 1.5, 0.0, 1.0)));
         
         // vec3 baseColorA = vec3(0.63, 0.333, 0.73);
@@ -60,9 +60,10 @@ class DofPointsMaterial extends THREE.ShaderMaterial {
         vec3 pinkColor = vec3(255, 153, 204) / 255.0; //  pink
         //vec3 darkColor = vec3(40, 233, 140) / 255.0; //  green
         //vec3 darkColor = vec3(254, 111, 29) / 255.0; //  orange
-        vec3 themeColor = mix(darkColor, lightColor, uTheme);
-        themeColor = mix(darkColor, pinkColor, normalizedX/1.5);
-
+        
+        // vec3 themeColor = mix(darkColor, lightColor, uTheme);
+        vec3 themeColor = mix(darkColor, pinkColor, normalizedX/1.5);
+        
         gl_FragColor = vec4(themeColor, (1.04 - clamp(vDistance * 1.5, 0.0, 1.0)));
       
       }`,

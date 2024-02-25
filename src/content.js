@@ -113,6 +113,38 @@ export const experiences = [
   },
 ];
 
+export const awards = [
+  {
+    date: "2018",
+    title: "Reimagine the game",
+    description: "KANTAR - Information Is Beautiful Awards",
+    link: "https://www.informationisbeautifulawards.com/showcase/3442-reimagine-the-game",
+  },
+  {
+    date: "January 2014",
+    title: "Czech Crime Map",
+    description: "On Think Tanks - data viz competition",
+  },
+  {
+    date: "October 13, 2013",
+    title: "Victorinox Festival Ready",
+    description: "THE FWA Mobile SITE OF THE DAY",
+    link: "https://thefwa.com/cases/victorinox-festival-ready",
+  },
+  {
+    date: "May 3, 2013",
+    title: "The Packing Battle",
+    description: "THE FWA SITE OF THE DAY",
+    link: "https://thefwa.com/cases/packing-battle",
+  },
+  {
+    date: "January 10, 2012",
+    title: "The Trip Around The Globe",
+    description: "THE FWA SITE OF THE DAY",
+    link: "https://thefwa.com/cases/trip-around-the-globe?month=2012-01",
+  },
+];
+
 export const speaking = [
   {
     title: "Datapoints are people too",
@@ -186,6 +218,10 @@ export const speaking = [
 
 export const writing = [
   {
+    title: "Why you should run your dev team like the Swedish Air Force",
+    date: "February 2024",
+  },
+  {
     title: "No-nonsense advise on public speaking",
     date: "January 2024",
     link: "https://medium.com/@zdenekhynek/no-nonsense-advise-on-public-speaking-9fb8684ed6d3",
@@ -216,9 +252,9 @@ export const writing = [
 
 export const reading = [
   {
-    title: "A Philosophy of Software Design by John Ousterhout",
-    date: "December 2023",
-    link: "https://galvanized-swordfish-aa0.notion.site/A-Philosophy-of-Software-Design-b0d028f024614408b98b4dccbb67c273?pvs=4",
+    title: "The Pragmatic Programmer",
+    date: "February 2024",
+    link: "",
   },
   {
     title: "Designing Products People Love by Scott Hurff",
@@ -226,13 +262,14 @@ export const reading = [
     link: "https://galvanized-swordfish-aa0.notion.site/Designing-products-that-people-want-cfdb3879c6894b8e96219165ed034bfa?pvs=4",
   },
   {
+    title: "A Philosophy of Software Design by John Ousterhout",
+    date: "December 2023",
+    link: "https://galvanized-swordfish-aa0.notion.site/A-Philosophy-of-Software-Design-b0d028f024614408b98b4dccbb67c273?pvs=4",
+  },
+
+  {
     title: "Designing Data-Intensive Applications",
     date: "2023",
-    link: "",
-  },
-  {
-    title: "The Pragmatic Programmer",
-    date: "2024",
     link: "",
   },
 ];

@@ -20,6 +20,11 @@ export function calculateRotationFactor(scrollY) {
   return 1;
 }
 
+export function isAndroidAgent() {
+  const userAgent = navigator.userAgent.toLowerCase();
+  return userAgent.indexOf("android") > -1;
+}
+
 export default function App() {
   useExternalScripts({ scriptString: injectDarkModeScripts });
 
@@ -45,6 +50,8 @@ export default function App() {
     acc[key] = props[key].value;
     return acc;
   }, {});
+
+  const isAndroid = isAndroidAgent();
 
   // useThree(({camera}) => {
   //   camera.rotation.set(deg2rad(30), 0, 0);
@@ -97,7 +104,7 @@ export default function App() {
         zoomSpeed={0.1}
       />
       {/* <CameraShake yawFrequency={1} maxYaw={0.05} pitchFrequency={1} maxPitch={0.05} rollFrequency={0.5} maxRoll={0.5} intensity={0.2} /> */}
-      <Particles {...props} />
+      {!isAndroid && <Particles {...props} />}
       <Html fullscreen /*style={{ "pointer-events": "none" }} */>
         <>
           <UI />

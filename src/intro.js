@@ -8,12 +8,17 @@ import {
   speaking,
   writing,
   reading,
+  awards,
 } from "./content";
+import { isAndroidAgent } from "./App";
 
 const Intro = () => {
+  const isAndroid = isAndroidAgent();
+
   return (
     <div class="body">
       {/* <button class="dark_mode_toggle">d</button> */}
+      {isAndroid && <div className="staticBackground" />}
       <div class="intro">
         <h1 class="h1">
           I’m Zdenek — a full-stack developer of data-driven systems and
@@ -25,6 +30,9 @@ const Intro = () => {
       </div>
       <div className="section__wrapper">
         <Section title="Experience" items={experiences} />
+      </div>
+      <div className="section__wrapper">
+        <Section title="Awards" items={awards} />
       </div>
       <div className="section__wrapper">
         <Section title="Speaking" items={speaking} />
