@@ -111,6 +111,11 @@ export const experiences = [
     title: "Founder and Full-Stack Developer",
     description: "Geographics",
   },
+  {
+    date: "2010 - 2012",
+    title: "Flash developer",
+    description: "SYMBIO Digital",
+  },
 ];
 
 export const awards = [
