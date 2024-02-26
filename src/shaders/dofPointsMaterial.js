@@ -62,7 +62,8 @@ class DofPointsMaterial extends THREE.ShaderMaterial {
         //vec3 darkColor = vec3(254, 111, 29) / 255.0; //  orange
         
         // vec3 themeColor = mix(darkColor, lightColor, uTheme);
-        vec3 themeColor = mix(darkColor, pinkColor, normalizedX/1.5);
+        //vec3 themeColor = mix(darkColor, pinkColor, normalizedX/1.5);
+        vec3 themeColor = mix(darkColor, pinkColor, normalizedX);
         
         gl_FragColor = vec4(themeColor, (1.04 - clamp(vDistance * 1.5, 0.0, 1.0)));
       
@@ -74,7 +75,7 @@ class DofPointsMaterial extends THREE.ShaderMaterial {
         uTheme: { value: 0.0 },
         uFov: { value: 50 },
         uBlur: { value: 30 },
-        screenWidth: { value: 1200 },
+        screenWidth: { value: window.innerWidth },
       },
       transparent: true,
       blending: THREE.NormalBlending,
