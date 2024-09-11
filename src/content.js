@@ -87,7 +87,12 @@ export const selectedWorks = [
 
 export const experiences = [
   {
-    date: "2021 - present",
+    date: "2024 - present",
+    title: "Senior Software Engineer",
+    description: "PhysicsX",
+  },
+  {
+    date: "2021 - 2024",
     title: "Founding Product Engineer",
     description: "Syntensor",
   },
