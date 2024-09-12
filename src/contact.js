@@ -58,7 +58,7 @@ export default function Contact({ title = "Title", items = [] }) {
       </ul>
       <ul className="section__list">
         <li>
-          <a target="_blank" href="./zdenek-hynek-cv-2023.pdf">
+          <a target="_blank" href="./zdenek-hynek-cv-2024.pdf">
             CV (PDF)
           </a>
         </li>

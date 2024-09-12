@@ -19,15 +19,15 @@ export const selectedWorks = [
       "A drug discovery platform for analysing inferences of ML model predicting the effect of a drug candidates on human biology.",
     link: "https://syntensor.com",
   },
-  {
-    title: "Torchdyn",
-    date: "August 2022",
-    tech: ["Next.js", "React", "WebGL"],
-    description:
-      "A microsite for a deep learning Python library and scientific computing.",
+  // {
+  //   title: "Torchdyn",
+  //   date: "August 2022",
+  //   tech: ["Next.js", "React", "WebGL"],
+  //   description:
+  //     "A microsite for a deep learning Python library and scientific computing.",
 
-    link: "https://torchdyn.org",
-  },
+  //   link: "https://torchdyn.org",
+  // },
   {
     title: "Uproar Tools",
     date: "February 2019",
