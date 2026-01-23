@@ -1,4 +1,20 @@
 export const selectedWorks = [
+   {
+    title: "PhysicsX Platform",
+    date: "January 2025",
+    tech: [
+      "React",
+      "Typescript",
+      "C++",
+      "Canvas",
+      "Python",
+      "Kubernetes",
+      "AWS",
+    ],
+    description:
+      "The AI-Native Engineering Platform unlocking the full potential of AI across design, manufacturing, and operations, enabling breakthroughs in performance, efficiency, and speed for some of the world’s most critical industrial sectors.",
+    link: "https://www.physicsx.ai/platform",
+  },
   {
     title: "Syntensor",
     date: "February 2021",
