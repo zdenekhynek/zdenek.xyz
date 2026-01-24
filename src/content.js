@@ -5,9 +5,10 @@ export const selectedWorks = [
     tech: [
       "React",
       "Typescript",
-      "C++",
-      "Canvas",
       "Python",
+      "C++",
+      "LangChain",
+      "Postgres",
       "Kubernetes",
       "AWS",
     ],
