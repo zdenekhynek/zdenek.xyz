@@ -21,8 +21,8 @@ const Intro = () => {
       {isAndroid && <div className="staticBackground" />}
       <div class="intro">
         <h1 class="h1">
-          I’m Zdenek — a full-stack developer of data-driven systems and
-          interfaces
+          I’m Zdenek — a product engineer building platforms and interfaces for
+          AI-native science and engineering
         </h1>
       </div>
       <div className="section__wrapper">

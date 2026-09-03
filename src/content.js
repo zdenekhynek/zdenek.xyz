@@ -13,7 +13,7 @@ export const selectedWorks = [
       "AWS",
     ],
     description:
-      "The AI-Native Engineering Platform unlocking the full potential of AI across design, manufacturing, and operations, enabling breakthroughs in performance, efficiency, and speed for some of the world’s most critical industrial sectors.",
+      "The AI-native engineering platform for industrial design and simulation. I work across the full stack — React/TypeScript frontend, Python and C++ services, and LLM tooling — running on Kubernetes and AWS.",
     link: "https://www.physicsx.ai/platform",
   },
   {
@@ -33,7 +33,7 @@ export const selectedWorks = [
       "Cypress",
     ],
     description:
-      "A drug discovery platform for analysing inferences of ML model predicting the effect of a drug candidates on human biology.",
+      "A drug-discovery platform for analysing the predictions of an ML model that forecasts how drug candidates affect human biology.",
     link: "https://syntensor.com",
   },
   // {
@@ -67,7 +67,7 @@ export const selectedWorks = [
       "Node.js",
     ],
     description:
-      "Award winning data-driven microsite telling a story of FC Bayern matches with thousands of data points captured within key moments in the game.",
+      "Award-winning data-driven microsite telling the story of FC Bayern matches through thousands of data points from key moments in each game.",
   },
   {
     title: "Electric Insights",
@@ -90,7 +90,7 @@ export const selectedWorks = [
     title: "The Our World in Data - Grapher",
     date: "February 2015",
     tech: ["Backbone", "d3.js", "SVG", "PHP", "Mysql"],
-    description: "Open-source tool to store tool to store and visualize data.",
+    description: "Open-source tool to store and visualize data.",
     link: "https://ourworldindata.org/owid-grapher",
   },
   {
@@ -105,7 +105,7 @@ export const selectedWorks = [
 export const experiences = [
   {
     date: "2024 - present",
-    title: "Senior Software Engineer",
+    title: "Staff Product Engineer",
     description: "PhysicsX",
   },
   {
@@ -116,7 +116,7 @@ export const experiences = [
   {
     date: "2018 - 2021",
     title: "Contract Senior Full-Stack Developer",
-    description: "Own limited company",
+    description: "Independent (own Ltd company)",
   },
   {
     date: "2016 - 2018",
@@ -126,7 +126,7 @@ export const experiences = [
   {
     date: "2015",
     title: "Research Assistant",
-    description: "The Oxford University",
+    description: "University of Oxford",
   },
   {
     date: "2008 - 2015",
@@ -249,7 +249,7 @@ export const writing = [
     date: "February 2024",
   },
   {
-    title: "No-nonsense advise on public speaking",
+    title: "No-nonsense advice on public speaking",
     date: "January 2024",
     link: "https://medium.com/@zdenekhynek/no-nonsense-advise-on-public-speaking-9fb8684ed6d3",
   },
